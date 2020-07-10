@@ -1,0 +1,1839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00034ADF568A12CEBA9866CA8A341147 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32DDFCCE9656E0E8FB6B65F5B05618F /* Entities.swift */; };
+		003EE881FC60AECABB983EFB919B04FD /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F68A9FA35660BD88C073E7EFF679B /* Tag.swift */; };
+		0292819F61F79BF8A4FD507D6B71ECAE /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = BB13C130E19B40DABF38A383B67A1C30 /* config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		032A80CB3A39D5ACB5F50C20CAF8C176 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7381121D7574A8645B64D8C2CD94541 /* Node.swift */; };
+		045C1483C5F51BC43EC690722B6F243C /* TMBarButtonStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB385F741AAB14B19C046B3216E2DE5 /* TMBarButtonStateController.swift */; };
+		05763F6ABE20F4E7C7DCA79D6D262FD5 /* TMBarViewUpdateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF6B504CBD98567404E2D3DF6A7E47 /* TMBarViewUpdateHandler.swift */; };
+		078BD919F8971F992187394E9E3EF764 /* TMBarViewContentInsetGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D911088986C8BD6C7397D117B01BF57 /* TMBarViewContentInsetGuides.swift */; };
+		096935D54B0678BC88B3C6CA1AA2A810 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674480DE51F8CB6047FCA63A218A701E /* Pattern.swift */; };
+		09A44FF8E27ACF3A47E73E58CD571041 /* brdb.h in Headers */ = {isa = PBXBuildFile; fileRef = EFCFFA815454FE51D1AD140A6EEF10F5 /* brdb.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0BC7C2B09FBBCDB25BA3944E6E46871F /* Pageboy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6B21766170CEE010D6BDB3F85334D96 /* Pageboy.framework */; };
+		0BD76A5D76285441F9393DF51D5067CF /* TMBlockBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF64ACDD9F6A675050AD18FEF0A53ADA /* TMBlockBarIndicator.swift */; };
+		0C12056EBB135AEAB4D58CD699441145 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D113104E2241030DEA2F6BE89DCD8 /* Parser.swift */; };
+		0D6C1152F0C115165C4CE948449AFDCF /* UIPageViewController+ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D8B072958E2CC007775E668EA6C364 /* UIPageViewController+ScrollView.swift */; };
+		100B96F996889669B9075C922E48AF66 /* DataNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FCD12A795D89516DF69309478CCA75 /* DataNode.swift */; };
+		140D25501B9E81CE248E7ED1405E3440 /* endian.c in Sources */ = {isa = PBXBuildFile; fileRef = C4DF64329CC805963DA0ACFA562F8583 /* endian.c */; };
+		166D66325936467FF24AF15B0379DA6A /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A6B80E0C49D5902993032C6FCFF0E5 /* Connection.swift */; };
+		190E98BEA61C00D19A4BAE3A549A3A17 /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D5DF1C81E7FF20F14C9DFA560EDA8F /* UIView+LayoutGuide.swift */; };
+		19336BED90BF78C34E0DECD4F7982BB9 /* TMBarLayoutParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738DA3071A1F58B2424091EEE7C886BD /* TMBarLayoutParent.swift */; };
+		1B16CFB3A394CE65C50312E117A2AFD9 /* AutoInsetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F0A3D54991A1EDCEC825077DADDB2 /* AutoInsetSpec.swift */; };
+		1B2AFA81F70119E8AD515D3D21D3E647 /* Pods-someThing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8EA2D6F14C93ECC486371A025EB122 /* Pods-someThing-dummy.m */; };
+		1D13B7C1E8D02FEDD4B6A735E4CFB336 /* InsetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12AE981F3B369C9C2BF13D748C7C66 /* InsetStore.swift */; };
+		1D55CFE9C2A8715C15AD83F03A6C9AE6 /* DefaultInsetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930EB7F1BD2BCF77142F9D4AB4EA5F8E /* DefaultInsetStore.swift */; };
+		1D6A97B7CA2A2D11034A09F5C30AC07E /* PSXLSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B053726DD1A1FD45EB453FA5070923F /* PSXLSReader.m */; };
+		1EFE2F52CF3ECCA7D6CF0648DB242360 /* PageboyViewController+Transitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BBA19A25DEE8BBF127C6858E1D7AD1 /* PageboyViewController+Transitioning.swift */; };
+		1F6683F4CF6ABF7DEB3B62D8C047B0E3 /* PageboyAutoScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED8095443075FDA52763EAD885FAF71 /* PageboyAutoScroller.swift */; };
+		20B623DC201914EA6AEE97C5C3B6A8A6 /* NavigationDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819CC69C7105979C0DF9660C51ECF7B8 /* NavigationDirection.swift */; };
+		220EECFCE82CFCBABC600A61C7FB26A5 /* PageboyViewController+AutoScrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEB21168F0555313145039040DA66 /* PageboyViewController+AutoScrolling.swift */; };
+		22C604FD4C0B6A14C6A2B9ECD20EF447 /* ole.h in Headers */ = {isa = PBXBuildFile; fileRef = 7378ED65AA296E377FA8F4809B4F75D5 /* ole.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23E0295550B40B1BD181A67F59F7A296 /* TMBarIndicatorLayoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350601CAF35D2E6DEEE9D6BC3FA24ABC /* TMBarIndicatorLayoutHandler.swift */; };
+		248725CC15903DDCD454652854C021D6 /* TMBarButtonInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDF2FE0B66CEF131164A8624EBF2A4D /* TMBarButtonInteractionController.swift */; };
+		26D4FBD8FF38109C5A21F7D735A7C1CE /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = 2496D33205A7A0D7FB983AC8DF362D13 /* xls2csv.c */; };
+		281547B37099BE2A66110B7806B1AAE4 /* BooleanAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488CE883671C609992CCE1C9716CE3EA /* BooleanAttribute.swift */; };
+		28478033100C4F27616430630623E96D /* BarMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A637B7E0B74AD18655F16A24B184D /* BarMath.swift */; };
+		294554C3006BDBA504B06C969E241585 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D8535644510DAF540CBFF1AE87A10D /* ParseError.swift */; };
+		29F2341B918A6A82CFF8CFCF87DC38D5 /* TMBarButtonCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD486A1B078095C8513E3ED913DE6177 /* TMBarButtonCollection.swift */; };
+		2A27C151DB1C2589475CAC8C5B4EBD0E /* InsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6596F384A5335E80F35C361355E330 /* InsetCalculator.swift */; };
+		2CA7FFB42DC6D86894AED253C6D544D5 /* Pageboy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67839DEFC292FC047B0B3177CF8E8BD1 /* Pageboy-dummy.m */; };
+		2EDF2B433A6AA6C1C95B0B8FC4AB4236 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF789B829D12146ABC1244A8962D44CC /* getopt.c */; };
+		2F95D329A8F05CD1AD03DE25EE736995 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = D8E77BB7FE1F9EC8601AB6301940262C /* ole.c */; };
+		307EBC52C431C3835D2426FD73A399B3 /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA380E933788736121E83C36D81822 /* WeakContainer.swift */; };
+		329725C3CBEEAE79BA0DFBF25E63EC6D /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C568A8989FB9763B66E894E3F93443C /* OrderedSet.swift */; };
+		337001A18E445C51C1BF5CFD97D9F338 /* PSXLSReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D8E363BF15E5A8D7D2B2B940CFA701 /* PSXLSReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34682401B50A12DF08A9D1023ED56E9A /* Tabman.h in Headers */ = {isa = PBXBuildFile; fileRef = 25FD4287177BD3FB5DAF65990E978113 /* Tabman.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35121279E0EBB91D1ED9D2F75E194D37 /* TokeniserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBECA69C535BB80EEBCE659E2769C3 /* TokeniserState.swift */; };
+		372CBA3F494F4224822D66320F4F0C94 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16163B6D3E9BBF3AE102FBE23073082 /* Validate.swift */; };
+		38AA40B2D031FEA2E288E3797728D680 /* CGRect+Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2743338D215ADD75AFB4ADCEE098E /* CGRect+Interpolation.swift */; };
+		39B659172F21C5B121A10734F04BCFC1 /* PSXLSReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CCA469829ECFBACECDAA6815260AE /* PSXLSReader-dummy.m */; };
+		3AAE7A7A93EEEB9B63D8DC1193AFB372 /* Collector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BC77657178410337D70D250563FA47 /* Collector.swift */; };
+		3F5F94EA364740B22769883FFF692875 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D578E5512003A9188312860DD120297 /* BinarySearch.swift */; };
+		4176DB6C27683F6136EC80D347B582D1 /* XmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F3CF17812269264D2605CC5A20973 /* XmlTreeBuilder.swift */; };
+		421462D3884284F95C1828707EB62235 /* SimpleDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1F998B320DA699CF2A5359FCC6C3D0 /* SimpleDictionary.swift */; };
+		451A1CB6D44F273CB0127154BE71EAD4 /* StringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988AAB46ED452C88B9CD19C35B8E6DAF /* StringBuilder.swift */; };
+		47AF290FC7C3FAC16083E7D8AFA492B3 /* AnimateableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD931075628D2C6DAF505FB2B782DC2 /* AnimateableLabel.swift */; };
+		4820E8318D16EED6D2829F986F5FE498 /* UIView+DefaultTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD9C60F29611C74275BB8EE8D100E7D /* UIView+DefaultTintColor.swift */; };
+		4A8C5CF842CEF17F7257B3CE43705D2A /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13EA028A22CDF21E601C196488C7783 /* Page.swift */; };
+		4AB80D2793B9DB40751265416B16154F /* QueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0774683021361B77CF5D3EB9329FA7 /* QueryParser.swift */; };
+		4D2B795E0762C7ADD95D8F5D8B1B9314 /* Tokeniser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8542109CF263E34CA6853255041771D6 /* Tokeniser.swift */; };
+		4E2E70394DFF665EDC135BE8DDF2F04D /* HtmlTreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1D414E35A38A89D4BC6CDE5513CA82 /* HtmlTreeBuilder.swift */; };
+		50312F40AF7781A0E8733C69AE8178F0 /* xlstypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E06DB8212D2AF042215DF5C458717A8 /* xlstypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50EB55F5A7965D80AD111D6F32104BF0 /* PageboyViewController+Updating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104BD2224D41441806B82469700532AD /* PageboyViewController+Updating.swift */; };
+		512D752C2ADF998C5050837276351FEC /* TMBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB44E48C039CCFC168F9BAFE2427FA97 /* TMBarItem.swift */; };
+		51A72C250FAE47AA9E37FE39421303A4 /* TMBarLayoutInsetGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEA641B66D14452F8E93D6C679594AB /* TMBarLayoutInsetGuides.swift */; };
+		558F696C4F749608A1810F1C49411F88 /* TransitionOperation+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = E802740A4B7DED36446C661C2912B5F3 /* TransitionOperation+Action.swift */; };
+		56E34AB448F77812428963C400E4A11E /* UnicodeScalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2E34088EF743317545F49C3F2388F /* UnicodeScalar.swift */; };
+		584A34F02852691A485BBFB127A41935 /* UIView+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04956C8FD0073538731B08937DB934F3 /* UIView+Localization.swift */; };
+		59CE297BE8C2C1186E0B925AE45C3EC9 /* ParseSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D999627EB0D3DE77DBD8D020A676B7 /* ParseSettings.swift */; };
+		5B9C98B83FD2286CE78183A2ED995A35 /* FormElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3805BC070043D9E4B5693479BB69D43D /* FormElement.swift */; };
+		5C6BE16BF2F4634DB9C0F237990C61F3 /* ViewTitleViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B675C3E4E91239B6D57EE2346AF3CB3E /* ViewTitleViewContainer.swift */; };
+		5CEFD7371CA827DEFDC50E649D55FF3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA71FA35996D964673ED29B1FC2B183 /* Foundation.framework */; };
+		5E2389F5CE309397BE5C6DAF6A66101B /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159828DD7DC5523DD5C7052E6A48EA1 /* Document.swift */; };
+		5EE7FEBB452CF8F205E5B06DB3DF4E57 /* Pageboy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7569FB15A6F2B852746108612E96D291 /* Pageboy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F19AEBBD0207B137C4991D2E2CA8410 /* UIViewController+Pageboy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D0492DCCEB546271F242480A6753ED /* UIViewController+Pageboy.swift */; };
+		5F4C6190E5A08291473F5C0E88FC3739 /* SwiftSoup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D2F3E1B62D56BB1D9B26DAD8837FFF6 /* SwiftSoup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60EB6AF27D2E12A609B74A8B09D82884 /* UIViewController+ScrollViewDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE6AB6BB729175A865FCD31C5B260A1 /* UIViewController+ScrollViewDetection.swift */; };
+		62D62A193944445E8474EBD86900DBD3 /* TMTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBEDC0A87C9728ADD415D38028F2D01 /* TMTransition.swift */; };
+		655163642437CC12215B8BB0826DEC87 /* InsetExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA2A4FAE8DEA35EEB9FDF080B259AF2 /* InsetExecutor.swift */; };
+		658D5D39B1275BFD243F1A51793BF9EA /* TMBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021848A14560F9B9D1253320065A0FF7 /* TMBarIndicator.swift */; };
+		65EA1C187273B2714CF1F2E235AB644F /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8BE18ACF6B2658FA08F63C0F7D514 /* DocumentType.swift */; };
+		6711E12103DDCCC716E3C41D591F1A4F /* Tabman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C247DBA5A67689D9E63B1086100F18 /* Tabman-dummy.m */; };
+		68AB6C448B94A4E647B414C15EE472F8 /* IndexedObjectMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D396DBDB0B26FBF05B3B759AC12D57D7 /* IndexedObjectMap.swift */; };
+		68FFFD557B90AD2CFE2F60662F692EDB /* TMBarViewScrollHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33ECE0C154DFC3DC0CD03C4127C8C8CA /* TMBarViewScrollHandler.swift */; };
+		6907ABBF65437DA308395549F36B0259 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5FAB90FD420FC7704FDC4C35D6092 /* Elements.swift */; };
+		6B6E21AA4896889399064C8DF3ECD0EE /* NodeTraversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3F1A06139249CF5934C4A82962537D /* NodeTraversor.swift */; };
+		6BBEC11944932CCB27BB2676D4CC9B03 /* xlsstruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 529136B8E0232017179AC124FB189E40 /* xlsstruct.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BE36316F2E4BF575D646D43CAC11516 /* EdgeFadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6934B670B143839BCB13F43166552CA /* EdgeFadedView.swift */; };
+		6C39A81231FCAD02701FFB6AD734503C /* GestureScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E055DCEDBB39E265DAB49E13E8C21A /* GestureScrollView.swift */; };
+		6D629BD80BB0CCA6AF58CC92849B2990 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F224AD68F1B54001418B63DF0B14A0E /* Attributes.swift */; };
+		6E444C513D6D295FBDE5FC6D51BDAF41 /* PageboyViewController+Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D450EE8DD23FF3A3488DC1A989D9ED /* PageboyViewController+Management.swift */; };
+		6F24234F92676EB462EA2FC4F602929C /* TMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F5E0B5AD40E16CCDD33A8A4DEB72D8 /* TMBarView.swift */; };
+		704FAFF3092C67A38AB4A6D748203B48 /* CharacterReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1D66C25D83B67EB86E8B9327A97C /* CharacterReader.swift */; };
+		707600A55F74C1C7E5904A482932D543 /* UIKit+TMBarItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6F026BA39466221F150BCA3DBEBA5 /* UIKit+TMBarItemable.swift */; };
+		71C3B63C71A463AB59397449CDC9CEEF /* TMAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF63271ACE9F648A6F84F690A65C768 /* TMAnimation.swift */; };
+		73DEE33BACACBC2EC9B4A05F6A5FB0C3 /* TMSystemBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052EDC958ED7FF9C380F4E588AC4A93F /* TMSystemBar.swift */; };
+		75071BE34C79E60560E9903E0233932B /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F04EB21C77508B3EC31F42B5FB6BBF /* Evaluator.swift */; };
+		7542E59A39A5762C1CDFA1213B5834F5 /* TMBarButton+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BF79EB297C80BCB1D54DB6C99BEBB /* TMBarButton+None.swift */; };
+		7688D17BEAFFABE442BE9F5AD99EDF1D /* ScrollViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB256F3991BA6B099087D82278D0307 /* ScrollViewInsetCalculator.swift */; };
+		7B51BE8D3C94632E7AF2BC30EB71B5B6 /* XmlDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDF00CE010D4A8310B5F2EE371EE234 /* XmlDeclaration.swift */; };
+		7C43C5E1CAD3B455A21D601DE92480DD /* HttpStatusException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4D97B6901074E2F801B1AEE820E32D /* HttpStatusException.swift */; };
+		7C9204DB1B4F0CC1064F5B1340DA1630 /* UIScrollView+Interaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5658643B29A559F428074C23C7B2B26C /* UIScrollView+Interaction.swift */; };
+		7CAB59F7E035045E752D4776F98F9EB7 /* xlstool.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E4150ED652E88D700923FBD1B88BD1 /* xlstool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DCE7B9231C9AAD2C12A16AF77803841 /* SerializationException.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14A5E98336D3DF926D1BC2E51468987 /* SerializationException.swift */; };
+		7E0FAB1F2E9A1454E777667D37A7CCCB /* PageboyViewController+ScrollDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D044E7B7E0BF2AF1E0051222BF9EE752 /* PageboyViewController+ScrollDetection.swift */; };
+		7E87418B9EEF097637EF6239D349DFBC /* TableViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4098AD9A9F9B166DBEECAEAAF81AA8 /* TableViewInsetCalculator.swift */; };
+		820455B9E044B1818C2545CAD8487485 /* Pods-someThing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F74A46ACCE92648A4B82D89C7C8BE6EE /* Pods-someThing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		831BB1C557F1CA786DEE64054B728B2B /* CombiningEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB755C8DB6ABA83A14332B054651374C /* CombiningEvaluator.swift */; };
+		84DA5B9A62FFC2661630D77A952906D5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41298A10E64FE530AE0E180A062B09 /* String.swift */; };
+		852D757CD0EA12B785C7C8790D917EED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA71FA35996D964673ED29B1FC2B183 /* Foundation.framework */; };
+		858E32BC5D314A07110E8203FA4C7649 /* TMHidingBar+Triggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0595D540CBC1D00B038D39E672FB1FC /* TMHidingBar+Triggers.swift */; };
+		8F9AC611ADB8243557D37EAE2A57AD1D /* ParseErrorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C228520F7D1A1AFD433EF2BA20D95A /* ParseErrorList.swift */; };
+		921958562CEEACDBFC375352EF50B64E /* TMBarIndicator+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA32B400566F4506028236D5D3CA62A7 /* TMBarIndicator+None.swift */; };
+		930A82DA7DC2A5BCDAAF1903FADD168A /* TMTabItemBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB223AFAA41B75E6ECD0C9508D8F268 /* TMTabItemBarButton.swift */; };
+		953FF1459A35239EA30FC21967C086B9 /* SwiftSoup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D3365E7FFE88DB7B868A011F8A1FB9 /* SwiftSoup.swift */; };
+		96A6007514730AC01270D0CC5A6982D2 /* brdb.c.h in Headers */ = {isa = PBXBuildFile; fileRef = 674071D7EB3FDBF374F4D7D49F0F1EC1 /* brdb.c.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		96D344238F4CFFB1E889F0FE6B40182E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EBC710A7831CB551280CAA50535FF8 /* Comment.swift */; };
+		981279762DCD410C9406AEA591D67900 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634913E83EADBCAD7AF8CC95CFC18C3 /* Element.swift */; };
+		984F92066E0B9E06DEE2E43EDA5FC22C /* CollectionViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06786C859F6D193FE6DBECDA5D67A2D2 /* CollectionViewInsetCalculator.swift */; };
+		98D3E09271A53B6305B92A3448BC63B1 /* PSXLSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0664770ECA833553F46A4A75000B505 /* PSXLSCell.m */; };
+		98E04EB526B4EE76A07E9DEAAA41BAC9 /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAE8A2DD8F2CB2B7B38323AF350D8C /* UIView+AutoLayout.swift */; };
+		9A369DE689D5862CCA2A87F86FC7542C /* TabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BABB0B2DD75347C6E471552A8037CD0 /* TabmanViewController.swift */; };
+		9BCFCF795FC8C466EF4C9ACF222C2188 /* TokenQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C879B05CBCF6DE5F5F131BB3605A1E3 /* TokenQueue.swift */; };
+		9D54E379A8D4680592443A828FA5F6D9 /* StructuralEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318C5D7433366D454A0F33E2AAC96BA /* StructuralEvaluator.swift */; };
+		9F19F52D0ABD25E54664030484D021A3 /* TreeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B416CB8546A3989750A15964517AED /* TreeBuilder.swift */; };
+		9FB65BDEA7E1249D5FA4B6B1FB9F05D1 /* Whitelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C4746533288A238F100CE8B53744D /* Whitelist.swift */; };
+		9FDC5F3249E8016079C7F0F1C6ED8976 /* TransitionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FAFAE4A07520125E82018E3A40E837 /* TransitionOperation.swift */; };
+		A08B67A38D8B22249ABA056DC46E7D0C /* TMBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7E5110B73CA4C9B71E97B85C5BF09B /* TMBarButton.swift */; };
+		A326BA93486435884A6BD43C0CEC4B5E /* TMChevronBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6BA5F512EDD28529792DECE783DEB /* TMChevronBarIndicator.swift */; };
+		A3524BDD0F6178A9E9B97AD57F298BB1 /* TMHorizontalBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EB152A65E4C30362C19A4857732E3 /* TMHorizontalBarLayout.swift */; };
+		A48AB6385459E899B9A53B014DBEEB16 /* Cleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70D1226F193436EF3467798D1276DA0 /* Cleaner.swift */; };
+		A5426CF4CF848CEC8065FD7A7A9EF3D7 /* NodeVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D1F018927830791B68B354D47B4BB /* NodeVisitor.swift */; };
+		A549DB42C17F884FF66B9C807662D45D /* PageboyViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F9805BA925C689BE4FBAEEFA655C24 /* PageboyViewControllerDataSource.swift */; };
+		A596505400DF0B1FB4A1BB3BD74CF298 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5859E020C4F23EB29A10C3E776E5B7E /* Exception.swift */; };
+		A5C7DD41D995EAAA0E92F240D5B0523B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA71FA35996D964673ED29B1FC2B183 /* Foundation.framework */; };
+		A5E9D9AD302162ABDFB0DBDD902331A7 /* StreamReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F5A0D3CA1F1AFB490DE78F9D51391B /* StreamReader.swift */; };
+		A8DB159A1FC619E45F28DC4456A26901 /* TMBarLayout+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE03167212418510A4CD7F6705E5AF13 /* TMBarLayout+None.swift */; };
+		AA2D5B130952FF0F3A0D9A3850D41CC5 /* DataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B6704E2C96B42F39A632E23FAA527 /* DataUtil.swift */; };
+		ABEF25AF0F271FC9C3AB7008E4616E24 /* xls.h in Headers */ = {isa = PBXBuildFile; fileRef = 757B907A22D419FEDC5013D0C91F07F5 /* xls.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC8465ADB2A205010C5D0BB6E57BE3D4 /* TMBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1484B20BE3C2684F9089ADB93CCB5DDA /* TMBar.swift */; };
+		AC9EAAC6E0F132018DE2263E556A4775 /* TMLineBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757C8D783A08C7EE154CCF6403077C3D /* TMLineBarIndicator.swift */; };
+		AEE35D240B44835F1CCE995AB6A6A0D5 /* AutoInsetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AA52C0760EFE6A4F0BD4021FB3838B /* AutoInsetter.swift */; };
+		B2A978E7989DDA6E875D8D1CA4E07C6C /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7194F2045287DC312F7530BF4860AB9D /* ArrayExt.swift */; };
+		B2CA6517FE1B88A7BC55BDEBE63ACB49 /* UIApplication+SafeShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B175663DC867900937EC6C113B610 /* UIApplication+SafeShared.swift */; };
+		B4353C412F9956D11783D54D0E0EA6F4 /* PageboyViewController+RelativeCurrentPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233B560A887CD6A93BBE1C18A2AA828 /* PageboyViewController+RelativeCurrentPosition.swift */; };
+		B46D9559566D22775388DCE3471C0E83 /* HtmlTreeBuilderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9791899888D26691E2B10A7480AEC48D /* HtmlTreeBuilderState.swift */; };
+		B4B5868A54517F0D4DCD087EE36DE2F3 /* PSXLSCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8192667F6F33BFA3BD920924EBB91230 /* PSXLSCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B784F8F3F1C513501DB1B54D77C8A7C9 /* Pageboy.h in Headers */ = {isa = PBXBuildFile; fileRef = D42103E83121F48F92CEB370DC212F5E /* Pageboy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA708AB476BA2236FD85D120651401FF /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA4935BB5604F9E0858893D47FC8B81 /* WeakContainer.swift */; };
+		BC429FEA8FC6DA9502CE677AE9C81409 /* TMBarButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6F642951C38F91587642FCE51177F9 /* TMBarButtonController.swift */; };
+		BCA000893004755A7512CAF6AD093F42 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A3DA7ABBDE4BD652E4417E810A9F4 /* UIView+Animation.swift */; };
+		BE91DB541D021D533ECA76B657EEAB2E /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932213C4265B90C2C9759E51BDE6E46 /* Attribute.swift */; };
+		C35C6A604C6715156DDE34CAB2B538C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA71FA35996D964673ED29B1FC2B183 /* Foundation.framework */; };
+		C5691FD99A172BC01FAF5D50E096AC69 /* PageboyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195103D31BD48142C31371705CDA1976 /* PageboyViewController.swift */; };
+		C91B8A1442DCF6482267BCF1F3DE663C /* TMBarViewFocusRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3C612AE29D72EA5BD5508CC0313813 /* TMBarViewFocusRect.swift */; };
+		CD473DB1012E9B2DEFC9C264D570C9F6 /* InsetCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832CE58C2F42F2FB389B42884E8CF90 /* InsetCalculations.swift */; };
+		CF39E29E1966D36FDD00384BD2AED61D /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2489DEBEC28A05AE44FF4126F09E74F5 /* TextNode.swift */; };
+		D2921E034DCE50661D92A2E5EC115D60 /* UIViewController+Tabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FEAAF294E0CF94F79CC778461A0C36 /* UIViewController+Tabman.swift */; };
+		D3DAC2436C897F8659D3E3B5455EB8B0 /* TMBarViewFocusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAF3831BCCD1DC09F511EB44F8CBF8E /* TMBarViewFocusProvider.swift */; };
+		D411C8FB492145516B626FE9C418D7A6 /* DispatchQueue+main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F8C16A348F6B4D78863573428518F /* DispatchQueue+main.swift */; };
+		D4188ACE81415BD8FC76E82E0CA57965 /* endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 204180FF65DF4195490CE73D3AACCDA1 /* endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D6DB4DCAB59BB518511A2BBF25ED8D6D /* PageboyViewController+ScrollCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839668F4C0D266CC5EDE4FCD220FCBB3 /* PageboyViewController+ScrollCalculations.swift */; };
+		D76F1D512831AA42F26949C2311D4BB8 /* Tabman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1717E41302A01DB5DA19C43B46E1E660 /* Tabman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB488FCDC37437E981C8B7A7668E24BF /* TMBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C750B4ED51FE889FED4BE881A2F716C8 /* TMBadgeView.swift */; };
+		DCDD50E4618C2CE4C84FFF0344981FC1 /* TMLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0186A7044DD3687AD6E2A7B5A17EBC68 /* TMLabelBarButton.swift */; };
+		DD65DACB4DF86890214D0E670EA4189D /* TMBarViewLayoutGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C1E8CF3A25411D1EE8774FEC7F542 /* TMBarViewLayoutGrid.swift */; };
+		DDF8768135F877C96D91C8034FFA4EEC /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AC585C5D10C89015E673EA81C248DA /* StringUtil.swift */; };
+		DE2EEAD6CEE66839D0C0D2549B693C66 /* PageboyNavigationDirection+Tabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814BD3677EE906334878D0952660CEB /* PageboyNavigationDirection+Tabman.swift */; };
+		DE69571A9A06E1D74886ECBB49AB54F9 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = 3959252ACFF1AAD9B12B70136093E132 /* xlstool.c */; };
+		DF2E5F38DD67CBDAA8AFD0DA6186E5BD /* UIColor+Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E617EEFB8318A5B26C86436B00E74FF7 /* UIColor+Interpolation.swift */; };
+		E2D9C53A9E2461BEC3CBF37A3359DA78 /* CharacterExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC03BB0818ECA90F3CA0F3A35A1C04C3 /* CharacterExt.swift */; };
+		E6ECE43E2B640E99DD2F9736A2CF6D8C /* TMHidingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECBA2F5FAE47FB73FBB4CEE14457486 /* TMHidingBar.swift */; };
+		E839731DB53EF420799747168C112929 /* PatchedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769E8DA3D04888FC32572A70FCD50D94 /* PatchedPageViewController.swift */; };
+		E89F61495FD9852AD9D7E6947C85EEAE /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078D3613D7FE329DD4B7AA35778B1D1 /* Token.swift */; };
+		E91C3CAF43065B6651B3EDA421B87875 /* TMDotBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C042D31B64D72D554080988A80193 /* TMDotBarIndicator.swift */; };
+		EEC67F227663409E434B72C6325B38C0 /* TMHorizontalBarLayout+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9652BA9CD6A439CA152203A6E33610 /* TMHorizontalBarLayout+Separator.swift */; };
+		F03EAA74777DC38EE6C621742D5F330F /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = 4575C7CF31FC624D4A12C28B29CFDD51 /* xls.c */; };
+		F33E790D4B35C33CCC10ABC524793A9C /* PageboyViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7B2FA43A90D1BC85EB9FEAE0C7D47 /* PageboyViewControllerDelegate.swift */; };
+		F506B3F0EEBA77401FD4A11CD16B7CD3 /* TMBarIndicatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BC20060138098B58EA426A82703408 /* TMBarIndicatorContainer.swift */; };
+		F65B381A79365B2C8426F9F37B355DEC /* TMBar+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323E967A2AF0AB204204C968BC7A66D0 /* TMBar+Templates.swift */; };
+		F77797744F1A65F4B9B396DA6BBD2AAD /* TMBarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE28E4DE7AAACCA7DC40518252F5FF2 /* TMBarBackgroundView.swift */; };
+		F9727B6B482A92C07A67509D18F89E5B /* SwiftSoup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CE9FF7654ED624CB5101767D8CAF1A /* SwiftSoup-dummy.m */; };
+		FAD6E5AC46C883FAC5F2AB551F30B573 /* TMConstrainedHorizontalBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA43173E0E92F7AD06AAF0E8D2A647E /* TMConstrainedHorizontalBarLayout.swift */; };
+		FBFFA42733116B416C9101C88E6C7774 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA71FA35996D964673ED29B1FC2B183 /* Foundation.framework */; };
+		FC174A7F8F2B9F67BF000654DCA03F1F /* CssSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC53AA892693194D9244B8254A8E0334 /* CssSelector.swift */; };
+		FD4DA6555D11F234E84DBE2B49C95F61 /* PSXLSReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A757D9AB04CD9592B22052E9C7A240E /* PSXLSReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE9FCE96CDA61262D4EB611F1CF3026E /* TMBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09447DA52F083ECF6CE9572AF7E4A07D /* TMBarLayout.swift */; };
+		FFD83E1683DC21B6B5CE9043F7AC0168 /* TabmanViewController+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EE5F4554845EBD5B9B3CDE7BA91A9 /* TabmanViewController+Insets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3029492AD8B32538F869AD2760B3D7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89F48405DFAFEF441B4E758A15117A5;
+			remoteInfo = SwiftSoup;
+		};
+		D52EDD0AF414735DF134DDF9BDF2C4B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06201A837B408E21A6F416D49AF9A573;
+			remoteInfo = Pageboy;
+		};
+		E0E6151732D6B40D100E73CE81184B1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EF26018CD886BA3143044A409D6D0B9;
+			remoteInfo = Tabman;
+		};
+		ECD17452C9D37917412B5458D0E46226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C40C02B4370BEB6ACB8C967A608240;
+			remoteInfo = PSXLSReader;
+		};
+		F2BAC6441EBEB5E831FE7B5FF976D28F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06201A837B408E21A6F416D49AF9A573;
+			remoteInfo = Pageboy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008D0A5CF9F086AB26AA9AAEBF7DD629 /* PSXLSReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSXLSReader.release.xcconfig; sourceTree = "<group>"; };
+		0186A7044DD3687AD6E2A7B5A17EBC68 /* TMLabelBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMLabelBarButton.swift; path = Sources/Tabman/Bar/BarButton/Types/TMLabelBarButton.swift; sourceTree = "<group>"; };
+		021848A14560F9B9D1253320065A0FF7 /* TMBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/TMBarIndicator.swift; sourceTree = "<group>"; };
+		026F8C16A348F6B4D78863573428518F /* DispatchQueue+main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+main.swift"; path = "Sources/Pageboy/Utilities/Extensions/DispatchQueue+main.swift"; sourceTree = "<group>"; };
+		039F68A9FA35660BD88C073E7EFF679B /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Tag.swift; sourceTree = "<group>"; };
+		04591C84A7713FAFDAC466D90BE433FF /* Pods-someThing-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-someThing-acknowledgements.plist"; sourceTree = "<group>"; };
+		04956C8FD0073538731B08937DB934F3 /* UIView+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Localization.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Localization.swift"; sourceTree = "<group>"; };
+		052EDC958ED7FF9C380F4E588AC4A93F /* TMSystemBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMSystemBar.swift; path = Sources/Tabman/Bar/BarExtensions/SystemBar/TMSystemBar.swift; sourceTree = "<group>"; };
+		06786C859F6D193FE6DBECDA5D67A2D2 /* CollectionViewInsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionViewInsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/CollectionViewInsetCalculator.swift; sourceTree = "<group>"; };
+		0766AED1F63C11752D2352DB87CAFC56 /* Tabman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tabman.release.xcconfig; sourceTree = "<group>"; };
+		07A055B2DD38BDC192A433854F198744 /* SwiftSoup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.debug.xcconfig; sourceTree = "<group>"; };
+		09447DA52F083ECF6CE9572AF7E4A07D /* TMBarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarLayout.swift; path = Sources/Tabman/Bar/BarLayout/TMBarLayout.swift; sourceTree = "<group>"; };
+		0BDF2FE0B66CEF131164A8624EBF2A4D /* TMBarButtonInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonInteractionController.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonInteractionController.swift; sourceTree = "<group>"; };
+		0EBAE8A2DD8F2CB2B7B38323AF350D8C /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+AutoLayout.swift"; sourceTree = "<group>"; };
+		104BD2224D41441806B82469700532AD /* PageboyViewController+Updating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Updating.swift"; path = "Sources/Pageboy/PageboyViewController+Updating.swift"; sourceTree = "<group>"; };
+		1159828DD7DC5523DD5C7052E6A48EA1 /* Document.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Document.swift; path = Sources/Document.swift; sourceTree = "<group>"; };
+		1481CB96089536B78ED273E3B5B5C858 /* Tabman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Tabman.debug.xcconfig; sourceTree = "<group>"; };
+		1484B20BE3C2684F9089ADB93CCB5DDA /* TMBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBar.swift; path = Sources/Tabman/Bar/TMBar.swift; sourceTree = "<group>"; };
+		1717E41302A01DB5DA19C43B46E1E660 /* Tabman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabman-umbrella.h"; sourceTree = "<group>"; };
+		195103D31BD48142C31371705CDA1976 /* PageboyViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewController.swift; path = Sources/Pageboy/PageboyViewController.swift; sourceTree = "<group>"; };
+		1B4098AD9A9F9B166DBEECAEAAF81AA8 /* TableViewInsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableViewInsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/TableViewInsetCalculator.swift; sourceTree = "<group>"; };
+		1D578E5512003A9188312860DD120297 /* BinarySearch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinarySearch.swift; path = Sources/BinarySearch.swift; sourceTree = "<group>"; };
+		1E7A8912E316B496978FFFC08847E076 /* SwiftSoup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSoup-Info.plist"; sourceTree = "<group>"; };
+		1E7BF79EB297C80BCB1D54DB6C99BEBB /* TMBarButton+None.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBarButton+None.swift"; path = "Sources/Tabman/Bar/BarButton/Types/TMBarButton+None.swift"; sourceTree = "<group>"; };
+		1F1F998B320DA699CF2A5359FCC6C3D0 /* SimpleDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDictionary.swift; path = Sources/SimpleDictionary.swift; sourceTree = "<group>"; };
+		204180FF65DF4195490CE73D3AACCDA1 /* endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = endian.h; path = PSXLSReader/Classes/libxls/endian.h; sourceTree = "<group>"; };
+		21FAFAE4A07520125E82018E3A40E837 /* TransitionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionOperation.swift; path = Sources/Pageboy/Transitioning/TransitionOperation.swift; sourceTree = "<group>"; };
+		22AC585C5D10C89015E673EA81C248DA /* StringUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtil.swift; path = Sources/StringUtil.swift; sourceTree = "<group>"; };
+		23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pageboy.framework; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2489DEBEC28A05AE44FF4126F09E74F5 /* TextNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextNode.swift; path = Sources/TextNode.swift; sourceTree = "<group>"; };
+		2496D33205A7A0D7FB983AC8DF362D13 /* xls2csv.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xls2csv.c; path = PSXLSReader/Classes/libxls/xls2csv.c; sourceTree = "<group>"; };
+		25FD4287177BD3FB5DAF65990E978113 /* Tabman.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Tabman.h; path = Sources/Tabman/Tabman.h; sourceTree = "<group>"; };
+		27D8B072958E2CC007775E668EA6C364 /* UIPageViewController+ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIPageViewController+ScrollView.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIPageViewController+ScrollView.swift"; sourceTree = "<group>"; };
+		2B1D414E35A38A89D4BC6CDE5513CA82 /* HtmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilder.swift; path = Sources/HtmlTreeBuilder.swift; sourceTree = "<group>"; };
+		2B8DEB21168F0555313145039040DA66 /* PageboyViewController+AutoScrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+AutoScrolling.swift"; path = "Sources/Pageboy/AutoScrolling/PageboyViewController+AutoScrolling.swift"; sourceTree = "<group>"; };
+		2BABB0B2DD75347C6E471552A8037CD0 /* TabmanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TabmanViewController.swift; path = Sources/Tabman/TabmanViewController.swift; sourceTree = "<group>"; };
+		2C9652BA9CD6A439CA152203A6E33610 /* TMHorizontalBarLayout+Separator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMHorizontalBarLayout+Separator.swift"; path = "Sources/Tabman/Bar/BarLayout/Types/TMHorizontalBarLayout+Separator.swift"; sourceTree = "<group>"; };
+		2D41298A10E64FE530AE0E180A062B09 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/String.swift; sourceTree = "<group>"; };
+		2E06DB8212D2AF042215DF5C458717A8 /* xlstypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlstypes.h; path = PSXLSReader/Classes/libxls/xlstypes.h; sourceTree = "<group>"; };
+		2F224AD68F1B54001418B63DF0B14A0E /* Attributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attributes.swift; path = Sources/Attributes.swift; sourceTree = "<group>"; };
+		30D5DF1C81E7FF20F14C9DFA560EDA8F /* UIView+LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+LayoutGuide.swift"; path = "Sources/Tabman/Extensions/UIView+LayoutGuide.swift"; sourceTree = "<group>"; };
+		323E967A2AF0AB204204C968BC7A66D0 /* TMBar+Templates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBar+Templates.swift"; path = "Sources/Tabman/Bar/TMBar+Templates.swift"; sourceTree = "<group>"; };
+		32AA52C0760EFE6A4F0BD4021FB3838B /* AutoInsetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoInsetter.swift; path = Sources/Tabman/AutoInsetter/AutoInsetter.swift; sourceTree = "<group>"; };
+		33D6BA5F512EDD28529792DECE783DEB /* TMChevronBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMChevronBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMChevronBarIndicator.swift; sourceTree = "<group>"; };
+		33ECE0C154DFC3DC0CD03C4127C8C8CA /* TMBarViewScrollHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewScrollHandler.swift; path = Sources/Tabman/Bar/BarView/TMBarViewScrollHandler.swift; sourceTree = "<group>"; };
+		350601CAF35D2E6DEEE9D6BC3FA24ABC /* TMBarIndicatorLayoutHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarIndicatorLayoutHandler.swift; path = Sources/Tabman/Bar/BarIndicator/TMBarIndicatorLayoutHandler.swift; sourceTree = "<group>"; };
+		3634913E83EADBCAD7AF8CC95CFC18C3 /* Element.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Sources/Element.swift; sourceTree = "<group>"; };
+		364EB152A65E4C30362C19A4857732E3 /* TMHorizontalBarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMHorizontalBarLayout.swift; path = Sources/Tabman/Bar/BarLayout/Types/TMHorizontalBarLayout.swift; sourceTree = "<group>"; };
+		3805BC070043D9E4B5693479BB69D43D /* FormElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormElement.swift; path = Sources/FormElement.swift; sourceTree = "<group>"; };
+		38EF6B504CBD98567404E2D3DF6A7E47 /* TMBarViewUpdateHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewUpdateHandler.swift; path = Sources/Tabman/Bar/BarView/TMBarViewUpdateHandler.swift; sourceTree = "<group>"; };
+		3932213C4265B90C2C9759E51BDE6E46 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = Sources/Attribute.swift; sourceTree = "<group>"; };
+		3959252ACFF1AAD9B12B70136093E132 /* xlstool.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xlstool.c; path = PSXLSReader/Classes/libxls/xlstool.c; sourceTree = "<group>"; };
+		3C3CCA469829ECFBACECDAA6815260AE /* PSXLSReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PSXLSReader-dummy.m"; sourceTree = "<group>"; };
+		3D87096EBDD74CBA2439F99733875B37 /* PSXLSReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PSXLSReader.debug.xcconfig; sourceTree = "<group>"; };
+		3D911088986C8BD6C7397D117B01BF57 /* TMBarViewContentInsetGuides.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewContentInsetGuides.swift; path = Sources/Tabman/Bar/BarView/TMBarViewContentInsetGuides.swift; sourceTree = "<group>"; };
+		3DC8BE18ACF6B2658FA08F63C0F7D514 /* DocumentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentType.swift; path = Sources/DocumentType.swift; sourceTree = "<group>"; };
+		3FB385F741AAB14B19C046B3216E2DE5 /* TMBarButtonStateController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonStateController.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonStateController.swift; sourceTree = "<group>"; };
+		4078D3613D7FE329DD4B7AA35778B1D1 /* Token.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Sources/Token.swift; sourceTree = "<group>"; };
+		40FCD12A795D89516DF69309478CCA75 /* DataNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataNode.swift; path = Sources/DataNode.swift; sourceTree = "<group>"; };
+		4575C7CF31FC624D4A12C28B29CFDD51 /* xls.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xls.c; path = PSXLSReader/Classes/libxls/xls.c; sourceTree = "<group>"; };
+		46E055DCEDBB39E265DAB49E13E8C21A /* GestureScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureScrollView.swift; path = Sources/Tabman/Bar/Generic/GestureScrollView.swift; sourceTree = "<group>"; };
+		47F5A0D3CA1F1AFB490DE78F9D51391B /* StreamReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamReader.swift; path = Sources/StreamReader.swift; sourceTree = "<group>"; };
+		488CE883671C609992CCE1C9716CE3EA /* BooleanAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BooleanAttribute.swift; path = Sources/BooleanAttribute.swift; sourceTree = "<group>"; };
+		4A757D9AB04CD9592B22052E9C7A240E /* PSXLSReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSXLSReader.h; path = PSXLSReader/Classes/PSXLSReader/PSXLSReader.h; sourceTree = "<group>"; };
+		4B053726DD1A1FD45EB453FA5070923F /* PSXLSReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSXLSReader.m; path = PSXLSReader/Classes/PSXLSReader/PSXLSReader.m; sourceTree = "<group>"; };
+		4D4799138F8AC5FFF2497DCB60AF4CBB /* Tabman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Tabman.framework; path = Tabman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED8095443075FDA52763EAD885FAF71 /* PageboyAutoScroller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyAutoScroller.swift; path = Sources/Pageboy/AutoScrolling/PageboyAutoScroller.swift; sourceTree = "<group>"; };
+		4F3F1A06139249CF5934C4A82962537D /* NodeTraversor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeTraversor.swift; path = Sources/NodeTraversor.swift; sourceTree = "<group>"; };
+		500C1E8CF3A25411D1EE8774FEC7F542 /* TMBarViewLayoutGrid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewLayoutGrid.swift; path = Sources/Tabman/Bar/BarView/TMBarViewLayoutGrid.swift; sourceTree = "<group>"; };
+		529136B8E0232017179AC124FB189E40 /* xlsstruct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlsstruct.h; path = PSXLSReader/Classes/libxls/xlsstruct.h; sourceTree = "<group>"; };
+		5658643B29A559F428074C23C7B2B26C /* UIScrollView+Interaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Interaction.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIScrollView+Interaction.swift"; sourceTree = "<group>"; };
+		5793AB60959F122DDF0F896C2DF51DE6 /* Pods-someThing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-someThing.debug.xcconfig"; sourceTree = "<group>"; };
+		5B3C612AE29D72EA5BD5508CC0313813 /* TMBarViewFocusRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewFocusRect.swift; path = Sources/Tabman/Bar/BarView/TMBarViewFocusRect.swift; sourceTree = "<group>"; };
+		5DA2A4FAE8DEA35EEB9FDF080B259AF2 /* InsetExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetExecutor.swift; path = Sources/Tabman/AutoInsetter/InsetExecutor/InsetExecutor.swift; sourceTree = "<group>"; };
+		5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSoup.framework; path = SwiftSoup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		611F3CF17812269264D2605CC5A20973 /* XmlTreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlTreeBuilder.swift; path = Sources/XmlTreeBuilder.swift; sourceTree = "<group>"; };
+		628B6704E2C96B42F39A632E23FAA527 /* DataUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataUtil.swift; path = Sources/DataUtil.swift; sourceTree = "<group>"; };
+		669F0A3D54991A1EDCEC825077DADDB2 /* AutoInsetSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoInsetSpec.swift; path = Sources/Tabman/AutoInsetter/AutoInsetSpec.swift; sourceTree = "<group>"; };
+		674071D7EB3FDBF374F4D7D49F0F1EC1 /* brdb.c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brdb.c.h; path = PSXLSReader/Classes/libxls/brdb.c.h; sourceTree = "<group>"; };
+		674480DE51F8CB6047FCA63A218A701E /* Pattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pattern.swift; path = Sources/Pattern.swift; sourceTree = "<group>"; };
+		674A3DA7ABBDE4BD652E4417E810A9F4 /* UIView+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animation.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIView+Animation.swift"; sourceTree = "<group>"; };
+		67839DEFC292FC047B0B3177CF8E8BD1 /* Pageboy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pageboy-dummy.m"; sourceTree = "<group>"; };
+		67BC77657178410337D70D250563FA47 /* Collector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collector.swift; path = Sources/Collector.swift; sourceTree = "<group>"; };
+		684848C61F97F7B69B8D732B41310707 /* SwiftSoup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSoup.release.xcconfig; sourceTree = "<group>"; };
+		6CB256F3991BA6B099087D82278D0307 /* ScrollViewInsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollViewInsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/ScrollViewInsetCalculator.swift; sourceTree = "<group>"; };
+		6D4D97B6901074E2F801B1AEE820E32D /* HttpStatusException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HttpStatusException.swift; path = Sources/HttpStatusException.swift; sourceTree = "<group>"; };
+		6ECBA2F5FAE47FB73FBB4CEE14457486 /* TMHidingBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMHidingBar.swift; path = Sources/Tabman/Bar/BarExtensions/AutoHidingBar/TMHidingBar.swift; sourceTree = "<group>"; };
+		70EFB5067F0B7EE79C9C5F261F3A8926 /* Pageboy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pageboy-Info.plist"; sourceTree = "<group>"; };
+		7194F2045287DC312F7530BF4860AB9D /* ArrayExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExt.swift; path = Sources/ArrayExt.swift; sourceTree = "<group>"; };
+		7378ED65AA296E377FA8F4809B4F75D5 /* ole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ole.h; path = PSXLSReader/Classes/libxls/ole.h; sourceTree = "<group>"; };
+		738DA3071A1F58B2424091EEE7C886BD /* TMBarLayoutParent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarLayoutParent.swift; path = Sources/Tabman/Bar/BarLayout/TMBarLayoutParent.swift; sourceTree = "<group>"; };
+		73F5E0B5AD40E16CCDD33A8A4DEB72D8 /* TMBarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarView.swift; path = Sources/Tabman/Bar/BarView/TMBarView.swift; sourceTree = "<group>"; };
+		7569FB15A6F2B852746108612E96D291 /* Pageboy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-umbrella.h"; sourceTree = "<group>"; };
+		757B907A22D419FEDC5013D0C91F07F5 /* xls.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xls.h; path = PSXLSReader/Classes/libxls/xls.h; sourceTree = "<group>"; };
+		757C8D783A08C7EE154CCF6403077C3D /* TMLineBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMLineBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMLineBarIndicator.swift; sourceTree = "<group>"; };
+		75EBC710A7831CB551280CAA50535FF8 /* Comment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = Sources/Comment.swift; sourceTree = "<group>"; };
+		769E8DA3D04888FC32572A70FCD50D94 /* PatchedPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatchedPageViewController.swift; path = Sources/Pageboy/Utilities/PatchedPageViewController.swift; sourceTree = "<group>"; };
+		76D2743338D215ADD75AFB4ADCEE098E /* CGRect+Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Interpolation.swift"; path = "Sources/Tabman/Bar/Extensions/CGRect+Interpolation.swift"; sourceTree = "<group>"; };
+		787D1F018927830791B68B354D47B4BB /* NodeVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodeVisitor.swift; path = Sources/NodeVisitor.swift; sourceTree = "<group>"; };
+		79D3365E7FFE88DB7B868A011F8A1FB9 /* SwiftSoup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSoup.swift; path = Sources/SwiftSoup.swift; sourceTree = "<group>"; };
+		79DA380E933788736121E83C36D81822 /* WeakContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakContainer.swift; path = Sources/Pageboy/Utilities/WeakContainer.swift; sourceTree = "<group>"; };
+		7A6F642951C38F91587642FCE51177F9 /* TMBarButtonController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonController.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonController.swift; sourceTree = "<group>"; };
+		7D2F3E1B62D56BB1D9B26DAD8837FFF6 /* SwiftSoup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-umbrella.h"; sourceTree = "<group>"; };
+		7E5C042D31B64D72D554080988A80193 /* TMDotBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMDotBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMDotBarIndicator.swift; sourceTree = "<group>"; };
+		7EBEDC0A87C9728ADD415D38028F2D01 /* TMTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMTransition.swift; path = Sources/Tabman/Bar/TMTransition.swift; sourceTree = "<group>"; };
+		7FA71FA35996D964673ED29B1FC2B183 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		80C247DBA5A67689D9E63B1086100F18 /* Tabman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Tabman-dummy.m"; sourceTree = "<group>"; };
+		8192667F6F33BFA3BD920924EBB91230 /* PSXLSCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PSXLSCell.h; path = PSXLSReader/Classes/PSXLSReader/PSXLSCell.h; sourceTree = "<group>"; };
+		819CC69C7105979C0DF9660C51ECF7B8 /* NavigationDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationDirection.swift; path = Sources/Pageboy/Model/NavigationDirection.swift; sourceTree = "<group>"; };
+		8233B560A887CD6A93BBE1C18A2AA828 /* PageboyViewController+RelativeCurrentPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+RelativeCurrentPosition.swift"; path = "Sources/Tabman/Extensions/PageboyViewController+RelativeCurrentPosition.swift"; sourceTree = "<group>"; };
+		839668F4C0D266CC5EDE4FCD220FCBB3 /* PageboyViewController+ScrollCalculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollCalculations.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollCalculations.swift"; sourceTree = "<group>"; };
+		841D113104E2241030DEA2F6BE89DCD8 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		8542109CF263E34CA6853255041771D6 /* Tokeniser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokeniser.swift; path = Sources/Tokeniser.swift; sourceTree = "<group>"; };
+		89E4150ED652E88D700923FBD1B88BD1 /* xlstool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlstool.h; path = PSXLSReader/Classes/libxls/xlstool.h; sourceTree = "<group>"; };
+		8C568A8989FB9763B66E894E3F93443C /* OrderedSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderedSet.swift; path = Sources/OrderedSet.swift; sourceTree = "<group>"; };
+		8C6596F384A5335E80F35C361355E330 /* InsetCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetCalculator.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/InsetCalculator.swift; sourceTree = "<group>"; };
+		8C879B05CBCF6DE5F5F131BB3605A1E3 /* TokenQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenQueue.swift; path = Sources/TokenQueue.swift; sourceTree = "<group>"; };
+		8D67A647F373261A91FADBAE460A6851 /* Pageboy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pageboy.modulemap; sourceTree = "<group>"; };
+		8EEBECA69C535BB80EEBCE659E2769C3 /* TokeniserState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokeniserState.swift; path = Sources/TokeniserState.swift; sourceTree = "<group>"; };
+		92C6F026BA39466221F150BCA3DBEBA5 /* UIKit+TMBarItemable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+TMBarItemable.swift"; path = "Sources/Tabman/Bar/BarItem/UIKit+TMBarItemable.swift"; sourceTree = "<group>"; };
+		930EB7F1BD2BCF77142F9D4AB4EA5F8E /* DefaultInsetStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultInsetStore.swift; path = Sources/Tabman/AutoInsetter/InsetStore/DefaultInsetStore.swift; sourceTree = "<group>"; };
+		94B938CB16C6A94E098AAB2BB864A414 /* Tabman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Tabman.modulemap; sourceTree = "<group>"; };
+		94D999627EB0D3DE77DBD8D020A676B7 /* ParseSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseSettings.swift; path = Sources/ParseSettings.swift; sourceTree = "<group>"; };
+		94E7A932041052D439134B59E9E6105E /* Pods-someThing-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-someThing-acknowledgements.markdown"; sourceTree = "<group>"; };
+		96BBA19A25DEE8BBF127C6858E1D7AD1 /* PageboyViewController+Transitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Transitioning.swift"; path = "Sources/Pageboy/Transitioning/PageboyViewController+Transitioning.swift"; sourceTree = "<group>"; };
+		9791899888D26691E2B10A7480AEC48D /* HtmlTreeBuilderState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HtmlTreeBuilderState.swift; path = Sources/HtmlTreeBuilderState.swift; sourceTree = "<group>"; };
+		988AAB46ED452C88B9CD19C35B8E6DAF /* StringBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringBuilder.swift; path = Sources/StringBuilder.swift; sourceTree = "<group>"; };
+		9A3022C97377794C74966AEA94F19E27 /* Pods-someThing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-someThing.modulemap"; sourceTree = "<group>"; };
+		9B0774683021361B77CF5D3EB9329FA7 /* QueryParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryParser.swift; path = Sources/QueryParser.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DBC3269926E724B6372AB594D591737 /* Pods-someThing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-someThing-Info.plist"; sourceTree = "<group>"; };
+		9F4A637B7E0B74AD18655F16A24B184D /* BarMath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarMath.swift; path = Sources/Tabman/Bar/Utility/BarMath.swift; sourceTree = "<group>"; };
+		9FA4935BB5604F9E0858893D47FC8B81 /* WeakContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakContainer.swift; path = Sources/Tabman/Bar/Utility/WeakContainer.swift; sourceTree = "<group>"; };
+		9FF63271ACE9F648A6F84F690A65C768 /* TMAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMAnimation.swift; path = Sources/Tabman/Bar/TMAnimation.swift; sourceTree = "<group>"; };
+		A0664770ECA833553F46A4A75000B505 /* PSXLSCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PSXLSCell.m; path = PSXLSReader/Classes/PSXLSReader/PSXLSCell.m; sourceTree = "<group>"; };
+		A16163B6D3E9BBF3AE102FBE23073082 /* Validate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validate.swift; path = Sources/Validate.swift; sourceTree = "<group>"; };
+		A47E9B9366434F8C7773009920836A83 /* PSXLSReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSXLSReader-prefix.pch"; sourceTree = "<group>"; };
+		A5BA438FDCA591DCFD0CF7D38A5D78BE /* Tabman-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Tabman-prefix.pch"; sourceTree = "<group>"; };
+		A6E5C3E42B533FBF2F30009B134E3663 /* SwiftSoup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSoup.modulemap; sourceTree = "<group>"; };
+		A70D1226F193436EF3467798D1276DA0 /* Cleaner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cleaner.swift; path = Sources/Cleaner.swift; sourceTree = "<group>"; };
+		AAC7B2FA43A90D1BC85EB9FEAE0C7D47 /* PageboyViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDelegate.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AB44E48C039CCFC168F9BAFE2427FA97 /* TMBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarItem.swift; path = Sources/Tabman/Bar/BarItem/TMBarItem.swift; sourceTree = "<group>"; };
+		ABAE1D66C25D83B67EB86E8B9327A97C /* CharacterReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterReader.swift; path = Sources/CharacterReader.swift; sourceTree = "<group>"; };
+		AC03BB0818ECA90F3CA0F3A35A1C04C3 /* CharacterExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CharacterExt.swift; path = Sources/CharacterExt.swift; sourceTree = "<group>"; };
+		AC7E5110B73CA4C9B71E97B85C5BF09B /* TMBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButton.swift; path = Sources/Tabman/Bar/BarButton/TMBarButton.swift; sourceTree = "<group>"; };
+		B0631C4D6CF6F4D1B06053BAE8F61E83 /* Pods_someThing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_someThing.framework; path = "Pods-someThing.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0A08E6907A5091C7695256647B5C7E9 /* Pods-someThing-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-someThing-frameworks.sh"; sourceTree = "<group>"; };
+		B13EA028A22CDF21E601C196488C7783 /* Page.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Page.swift; path = Sources/Pageboy/Model/Page.swift; sourceTree = "<group>"; };
+		B14A5E98336D3DF926D1BC2E51468987 /* SerializationException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerializationException.swift; path = Sources/SerializationException.swift; sourceTree = "<group>"; };
+		B24B175663DC867900937EC6C113B610 /* UIApplication+SafeShared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+SafeShared.swift"; path = "Sources/Pageboy/Utilities/Extensions/UIApplication+SafeShared.swift"; sourceTree = "<group>"; };
+		B2F04EB21C77508B3EC31F42B5FB6BBF /* Evaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Evaluator.swift; path = Sources/Evaluator.swift; sourceTree = "<group>"; };
+		B675C3E4E91239B6D57EE2346AF3CB3E /* ViewTitleViewContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewTitleViewContainer.swift; path = Sources/Tabman/Bar/Generic/ViewTitleViewContainer.swift; sourceTree = "<group>"; };
+		B6B21766170CEE010D6BDB3F85334D96 /* Pageboy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pageboy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B708C5A6CB54D9FF869DD76F2700AECF /* PSXLSReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PSXLSReader.modulemap; sourceTree = "<group>"; };
+		B832CE58C2F42F2FB389B42884E8CF90 /* InsetCalculations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetCalculations.swift; path = Sources/Tabman/AutoInsetter/InsetCalculator/InsetCalculations.swift; sourceTree = "<group>"; };
+		B964F2F083FF14C359926E9576504CD8 /* Pods-someThing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-someThing.release.xcconfig"; sourceTree = "<group>"; };
+		BB13C130E19B40DABF38A383B67A1C30 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = PSXLSReader/Classes/libxls/config.h; sourceTree = "<group>"; };
+		BBDF00CE010D4A8310B5F2EE371EE234 /* XmlDeclaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XmlDeclaration.swift; path = Sources/XmlDeclaration.swift; sourceTree = "<group>"; };
+		BCAF3831BCCD1DC09F511EB44F8CBF8E /* TMBarViewFocusProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarViewFocusProvider.swift; path = Sources/Tabman/Bar/BarView/TMBarViewFocusProvider.swift; sourceTree = "<group>"; };
+		BD486A1B078095C8513E3ED913DE6177 /* TMBarButtonCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarButtonCollection.swift; path = Sources/Tabman/Bar/BarButton/TMBarButtonCollection.swift; sourceTree = "<group>"; };
+		C0D8535644510DAF540CBFF1AE87A10D /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseError.swift; path = Sources/ParseError.swift; sourceTree = "<group>"; };
+		C32DDFCCE9656E0E8FB6B65F5B05618F /* Entities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entities.swift; path = Sources/Entities.swift; sourceTree = "<group>"; };
+		C3A7DB031BBDDBB985D5DD886E046F4C /* Pageboy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.release.xcconfig; sourceTree = "<group>"; };
+		C4DF64329CC805963DA0ACFA562F8583 /* endian.c */ = {isa = PBXFileReference; includeInIndex = 1; name = endian.c; path = PSXLSReader/Classes/libxls/endian.c; sourceTree = "<group>"; };
+		C750B4ED51FE889FED4BE881A2F716C8 /* TMBadgeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBadgeView.swift; path = Sources/Tabman/Bar/BarButton/Badge/TMBadgeView.swift; sourceTree = "<group>"; };
+		C7F65CA177F3527C98ECFA37C6DB4A98 /* Tabman-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Tabman-Info.plist"; sourceTree = "<group>"; };
+		C9B5FAB90FD420FC7704FDC4C35D6092 /* Elements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elements.swift; path = Sources/Elements.swift; sourceTree = "<group>"; };
+		CBD931075628D2C6DAF505FB2B782DC2 /* AnimateableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimateableLabel.swift; path = Sources/Tabman/Bar/Generic/AnimateableLabel.swift; sourceTree = "<group>"; };
+		CBE6AB6BB729175A865FCD31C5B260A1 /* UIViewController+ScrollViewDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ScrollViewDetection.swift"; path = "Sources/Tabman/AutoInsetter/Utilities/UIViewController+ScrollViewDetection.swift"; sourceTree = "<group>"; };
+		CD6C4746533288A238F100CE8B53744D /* Whitelist.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Whitelist.swift; path = Sources/Whitelist.swift; sourceTree = "<group>"; };
+		CDEA641B66D14452F8E93D6C679594AB /* TMBarLayoutInsetGuides.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarLayoutInsetGuides.swift; path = Sources/Tabman/Bar/BarLayout/TMBarLayoutInsetGuides.swift; sourceTree = "<group>"; };
+		CF789B829D12146ABC1244A8962D44CC /* getopt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = getopt.c; path = PSXLSReader/Classes/libxls/getopt.c; sourceTree = "<group>"; };
+		CFD9C60F29611C74275BB8EE8D100E7D /* UIView+DefaultTintColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+DefaultTintColor.swift"; path = "Sources/Tabman/Bar/Extensions/UIView+DefaultTintColor.swift"; sourceTree = "<group>"; };
+		D044E7B7E0BF2AF1E0051222BF9EE752 /* PageboyViewController+ScrollDetection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+ScrollDetection.swift"; path = "Sources/Pageboy/PageboyViewController+ScrollDetection.swift"; sourceTree = "<group>"; };
+		D2CE9FF7654ED624CB5101767D8CAF1A /* SwiftSoup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSoup-dummy.m"; sourceTree = "<group>"; };
+		D396DBDB0B26FBF05B3B759AC12D57D7 /* IndexedObjectMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IndexedObjectMap.swift; path = Sources/Pageboy/Utilities/IndexedObjectMap.swift; sourceTree = "<group>"; };
+		D42103E83121F48F92CEB370DC212F5E /* Pageboy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Pageboy.h; path = Sources/Pageboy/Pageboy.h; sourceTree = "<group>"; };
+		D5859E020C4F23EB29A10C3E776E5B7E /* Exception.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Exception.swift; path = Sources/Exception.swift; sourceTree = "<group>"; };
+		D5BC20060138098B58EA426A82703408 /* TMBarIndicatorContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarIndicatorContainer.swift; path = Sources/Tabman/Bar/BarIndicator/TMBarIndicatorContainer.swift; sourceTree = "<group>"; };
+		D6934B670B143839BCB13F43166552CA /* EdgeFadedView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EdgeFadedView.swift; path = Sources/Tabman/Bar/Generic/EdgeFadedView.swift; sourceTree = "<group>"; };
+		D7381121D7574A8645B64D8C2CD94541 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
+		D814BD3677EE906334878D0952660CEB /* PageboyNavigationDirection+Tabman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyNavigationDirection+Tabman.swift"; path = "Sources/Tabman/Extensions/PageboyNavigationDirection+Tabman.swift"; sourceTree = "<group>"; };
+		D8A6B80E0C49D5902993032C6FCFF0E5 /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/Connection.swift; sourceTree = "<group>"; };
+		D8E77BB7FE1F9EC8601AB6301940262C /* ole.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ole.c; path = PSXLSReader/Classes/libxls/ole.c; sourceTree = "<group>"; };
+		D9022D004544B04303DB8C58CABB370A /* PSXLSReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PSXLSReader.framework; path = PSXLSReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBB223AFAA41B75E6ECD0C9508D8F268 /* TMTabItemBarButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMTabItemBarButton.swift; path = Sources/Tabman/Bar/BarButton/Types/TMTabItemBarButton.swift; sourceTree = "<group>"; };
+		DC0E367B6416D1C9CF41BB4AD8188425 /* Pageboy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pageboy-prefix.pch"; sourceTree = "<group>"; };
+		DC53AA892693194D9244B8254A8E0334 /* CssSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CssSelector.swift; path = Sources/CssSelector.swift; sourceTree = "<group>"; };
+		DCEDBC48E4E1EA4909CB02CAC89A1F6A /* SwiftSoup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSoup-prefix.pch"; sourceTree = "<group>"; };
+		E5C2E34088EF743317545F49C3F2388F /* UnicodeScalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeScalar.swift; path = Sources/UnicodeScalar.swift; sourceTree = "<group>"; };
+		E617EEFB8318A5B26C86436B00E74FF7 /* UIColor+Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Interpolation.swift"; path = "Sources/Tabman/Bar/Extensions/UIColor+Interpolation.swift"; sourceTree = "<group>"; };
+		E802740A4B7DED36446C661C2912B5F3 /* TransitionOperation+Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TransitionOperation+Action.swift"; path = "Sources/Pageboy/Transitioning/TransitionOperation+Action.swift"; sourceTree = "<group>"; };
+		E8F9805BA925C689BE4FBAEEFA655C24 /* PageboyViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageboyViewControllerDataSource.swift; path = Sources/Pageboy/Protocols/PageboyViewControllerDataSource.swift; sourceTree = "<group>"; };
+		E9FEAAF294E0CF94F79CC778461A0C36 /* UIViewController+Tabman.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Tabman.swift"; path = "Sources/Tabman/Extensions/UIViewController+Tabman.swift"; sourceTree = "<group>"; };
+		EA32B400566F4506028236D5D3CA62A7 /* TMBarIndicator+None.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBarIndicator+None.swift"; path = "Sources/Tabman/Bar/BarIndicator/Types/TMBarIndicator+None.swift"; sourceTree = "<group>"; };
+		EB735AF7CDC9227706DFE24EC4080B98 /* PSXLSReader-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PSXLSReader-Info.plist"; sourceTree = "<group>"; };
+		EB755C8DB6ABA83A14332B054651374C /* CombiningEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CombiningEvaluator.swift; path = Sources/CombiningEvaluator.swift; sourceTree = "<group>"; };
+		EB8EA2D6F14C93ECC486371A025EB122 /* Pods-someThing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-someThing-dummy.m"; sourceTree = "<group>"; };
+		EB9EE5F4554845EBD5B9B3CDE7BA91A9 /* TabmanViewController+Insets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TabmanViewController+Insets.swift"; path = "Sources/Tabman/TabmanViewController+Insets.swift"; sourceTree = "<group>"; };
+		EBE28E4DE7AAACCA7DC40518252F5FF2 /* TMBarBackgroundView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBarBackgroundView.swift; path = Sources/Tabman/Bar/BarBackgroundView/TMBarBackgroundView.swift; sourceTree = "<group>"; };
+		EF23E2DAFC57786DB689D14AF4F2EF1C /* Pageboy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pageboy.debug.xcconfig; sourceTree = "<group>"; };
+		EF64ACDD9F6A675050AD18FEF0A53ADA /* TMBlockBarIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMBlockBarIndicator.swift; path = Sources/Tabman/Bar/BarIndicator/Types/TMBlockBarIndicator.swift; sourceTree = "<group>"; };
+		EFA43173E0E92F7AD06AAF0E8D2A647E /* TMConstrainedHorizontalBarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TMConstrainedHorizontalBarLayout.swift; path = Sources/Tabman/Bar/BarLayout/Types/TMConstrainedHorizontalBarLayout.swift; sourceTree = "<group>"; };
+		EFCFFA815454FE51D1AD140A6EEF10F5 /* brdb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brdb.h; path = PSXLSReader/Classes/libxls/brdb.h; sourceTree = "<group>"; };
+		F0595D540CBC1D00B038D39E672FB1FC /* TMHidingBar+Triggers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMHidingBar+Triggers.swift"; path = "Sources/Tabman/Bar/BarExtensions/AutoHidingBar/TMHidingBar+Triggers.swift"; sourceTree = "<group>"; };
+		F0B416CB8546A3989750A15964517AED /* TreeBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TreeBuilder.swift; path = Sources/TreeBuilder.swift; sourceTree = "<group>"; };
+		F318C5D7433366D454A0F33E2AAC96BA /* StructuralEvaluator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructuralEvaluator.swift; path = Sources/StructuralEvaluator.swift; sourceTree = "<group>"; };
+		F3D450EE8DD23FF3A3488DC1A989D9ED /* PageboyViewController+Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PageboyViewController+Management.swift"; path = "Sources/Pageboy/PageboyViewController+Management.swift"; sourceTree = "<group>"; };
+		F5C228520F7D1A1AFD433EF2BA20D95A /* ParseErrorList.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseErrorList.swift; path = Sources/ParseErrorList.swift; sourceTree = "<group>"; };
+		F74A46ACCE92648A4B82D89C7C8BE6EE /* Pods-someThing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-someThing-umbrella.h"; sourceTree = "<group>"; };
+		F9D0492DCCEB546271F242480A6753ED /* UIViewController+Pageboy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Pageboy.swift"; path = "Sources/Pageboy/UIViewController+Pageboy.swift"; sourceTree = "<group>"; };
+		F9D8E363BF15E5A8D7D2B2B940CFA701 /* PSXLSReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PSXLSReader-umbrella.h"; sourceTree = "<group>"; };
+		FC12AE981F3B369C9C2BF13D748C7C66 /* InsetStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsetStore.swift; path = Sources/Tabman/AutoInsetter/InsetStore/InsetStore.swift; sourceTree = "<group>"; };
+		FE03167212418510A4CD7F6705E5AF13 /* TMBarLayout+None.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TMBarLayout+None.swift"; path = "Sources/Tabman/Bar/BarLayout/Types/TMBarLayout+None.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		484A041D51BF2BBFDFBB4494C8CD928F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFFA42733116B416C9101C88E6C7774 /* Foundation.framework in Frameworks */,
+				0BC7C2B09FBBCDB25BA3944E6E46871F /* Pageboy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5527975A68607B66FC846B498E1D8D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CEFD7371CA827DEFDC50E649D55FF3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87690769959390633F2521CEA908DCD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852D757CD0EA12B785C7C8790D917EED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA3C25FF8D0CE6F53DE344F076CD143B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C7DD41D995EAAA0E92F240D5B0523B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E680DC255BFB5509B49C5687F7A7A494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35C6A604C6715156DDE34CAB2B538C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09264365B32DA4440AADACB62818C71C /* PSXLSReader */ = {
+			isa = PBXGroup;
+			children = (
+				EFCFFA815454FE51D1AD140A6EEF10F5 /* brdb.h */,
+				674071D7EB3FDBF374F4D7D49F0F1EC1 /* brdb.c.h */,
+				BB13C130E19B40DABF38A383B67A1C30 /* config.h */,
+				C4DF64329CC805963DA0ACFA562F8583 /* endian.c */,
+				204180FF65DF4195490CE73D3AACCDA1 /* endian.h */,
+				CF789B829D12146ABC1244A8962D44CC /* getopt.c */,
+				D8E77BB7FE1F9EC8601AB6301940262C /* ole.c */,
+				7378ED65AA296E377FA8F4809B4F75D5 /* ole.h */,
+				8192667F6F33BFA3BD920924EBB91230 /* PSXLSCell.h */,
+				A0664770ECA833553F46A4A75000B505 /* PSXLSCell.m */,
+				4A757D9AB04CD9592B22052E9C7A240E /* PSXLSReader.h */,
+				4B053726DD1A1FD45EB453FA5070923F /* PSXLSReader.m */,
+				4575C7CF31FC624D4A12C28B29CFDD51 /* xls.c */,
+				757B907A22D419FEDC5013D0C91F07F5 /* xls.h */,
+				2496D33205A7A0D7FB983AC8DF362D13 /* xls2csv.c */,
+				529136B8E0232017179AC124FB189E40 /* xlsstruct.h */,
+				3959252ACFF1AAD9B12B70136093E132 /* xlstool.c */,
+				89E4150ED652E88D700923FBD1B88BD1 /* xlstool.h */,
+				2E06DB8212D2AF042215DF5C458717A8 /* xlstypes.h */,
+				69221C71C8AE0DF724F242426EDAEC90 /* Support Files */,
+			);
+			name = PSXLSReader;
+			path = PSXLSReader;
+			sourceTree = "<group>";
+		};
+		13EC7DE6C082DB67DF2C3F35A99DC82F /* SwiftSoup */ = {
+			isa = PBXGroup;
+			children = (
+				7194F2045287DC312F7530BF4860AB9D /* ArrayExt.swift */,
+				3932213C4265B90C2C9759E51BDE6E46 /* Attribute.swift */,
+				2F224AD68F1B54001418B63DF0B14A0E /* Attributes.swift */,
+				1D578E5512003A9188312860DD120297 /* BinarySearch.swift */,
+				488CE883671C609992CCE1C9716CE3EA /* BooleanAttribute.swift */,
+				AC03BB0818ECA90F3CA0F3A35A1C04C3 /* CharacterExt.swift */,
+				ABAE1D66C25D83B67EB86E8B9327A97C /* CharacterReader.swift */,
+				A70D1226F193436EF3467798D1276DA0 /* Cleaner.swift */,
+				67BC77657178410337D70D250563FA47 /* Collector.swift */,
+				EB755C8DB6ABA83A14332B054651374C /* CombiningEvaluator.swift */,
+				75EBC710A7831CB551280CAA50535FF8 /* Comment.swift */,
+				D8A6B80E0C49D5902993032C6FCFF0E5 /* Connection.swift */,
+				DC53AA892693194D9244B8254A8E0334 /* CssSelector.swift */,
+				40FCD12A795D89516DF69309478CCA75 /* DataNode.swift */,
+				628B6704E2C96B42F39A632E23FAA527 /* DataUtil.swift */,
+				1159828DD7DC5523DD5C7052E6A48EA1 /* Document.swift */,
+				3DC8BE18ACF6B2658FA08F63C0F7D514 /* DocumentType.swift */,
+				3634913E83EADBCAD7AF8CC95CFC18C3 /* Element.swift */,
+				C9B5FAB90FD420FC7704FDC4C35D6092 /* Elements.swift */,
+				C32DDFCCE9656E0E8FB6B65F5B05618F /* Entities.swift */,
+				B2F04EB21C77508B3EC31F42B5FB6BBF /* Evaluator.swift */,
+				D5859E020C4F23EB29A10C3E776E5B7E /* Exception.swift */,
+				3805BC070043D9E4B5693479BB69D43D /* FormElement.swift */,
+				2B1D414E35A38A89D4BC6CDE5513CA82 /* HtmlTreeBuilder.swift */,
+				9791899888D26691E2B10A7480AEC48D /* HtmlTreeBuilderState.swift */,
+				6D4D97B6901074E2F801B1AEE820E32D /* HttpStatusException.swift */,
+				D7381121D7574A8645B64D8C2CD94541 /* Node.swift */,
+				4F3F1A06139249CF5934C4A82962537D /* NodeTraversor.swift */,
+				787D1F018927830791B68B354D47B4BB /* NodeVisitor.swift */,
+				8C568A8989FB9763B66E894E3F93443C /* OrderedSet.swift */,
+				C0D8535644510DAF540CBFF1AE87A10D /* ParseError.swift */,
+				F5C228520F7D1A1AFD433EF2BA20D95A /* ParseErrorList.swift */,
+				841D113104E2241030DEA2F6BE89DCD8 /* Parser.swift */,
+				94D999627EB0D3DE77DBD8D020A676B7 /* ParseSettings.swift */,
+				674480DE51F8CB6047FCA63A218A701E /* Pattern.swift */,
+				9B0774683021361B77CF5D3EB9329FA7 /* QueryParser.swift */,
+				B14A5E98336D3DF926D1BC2E51468987 /* SerializationException.swift */,
+				1F1F998B320DA699CF2A5359FCC6C3D0 /* SimpleDictionary.swift */,
+				47F5A0D3CA1F1AFB490DE78F9D51391B /* StreamReader.swift */,
+				2D41298A10E64FE530AE0E180A062B09 /* String.swift */,
+				988AAB46ED452C88B9CD19C35B8E6DAF /* StringBuilder.swift */,
+				22AC585C5D10C89015E673EA81C248DA /* StringUtil.swift */,
+				F318C5D7433366D454A0F33E2AAC96BA /* StructuralEvaluator.swift */,
+				79D3365E7FFE88DB7B868A011F8A1FB9 /* SwiftSoup.swift */,
+				039F68A9FA35660BD88C073E7EFF679B /* Tag.swift */,
+				2489DEBEC28A05AE44FF4126F09E74F5 /* TextNode.swift */,
+				4078D3613D7FE329DD4B7AA35778B1D1 /* Token.swift */,
+				8542109CF263E34CA6853255041771D6 /* Tokeniser.swift */,
+				8EEBECA69C535BB80EEBCE659E2769C3 /* TokeniserState.swift */,
+				8C879B05CBCF6DE5F5F131BB3605A1E3 /* TokenQueue.swift */,
+				F0B416CB8546A3989750A15964517AED /* TreeBuilder.swift */,
+				E5C2E34088EF743317545F49C3F2388F /* UnicodeScalar.swift */,
+				A16163B6D3E9BBF3AE102FBE23073082 /* Validate.swift */,
+				CD6C4746533288A238F100CE8B53744D /* Whitelist.swift */,
+				BBDF00CE010D4A8310B5F2EE371EE234 /* XmlDeclaration.swift */,
+				611F3CF17812269264D2605CC5A20973 /* XmlTreeBuilder.swift */,
+				73F59DE46A7EB5315549AC849438BF2A /* Support Files */,
+			);
+			name = SwiftSoup;
+			path = SwiftSoup;
+			sourceTree = "<group>";
+		};
+		385CF92EC3163791CDC5DA016AEC3730 /* Pageboy */ = {
+			isa = PBXGroup;
+			children = (
+				026F8C16A348F6B4D78863573428518F /* DispatchQueue+main.swift */,
+				D396DBDB0B26FBF05B3B759AC12D57D7 /* IndexedObjectMap.swift */,
+				819CC69C7105979C0DF9660C51ECF7B8 /* NavigationDirection.swift */,
+				B13EA028A22CDF21E601C196488C7783 /* Page.swift */,
+				D42103E83121F48F92CEB370DC212F5E /* Pageboy.h */,
+				4ED8095443075FDA52763EAD885FAF71 /* PageboyAutoScroller.swift */,
+				195103D31BD48142C31371705CDA1976 /* PageboyViewController.swift */,
+				2B8DEB21168F0555313145039040DA66 /* PageboyViewController+AutoScrolling.swift */,
+				F3D450EE8DD23FF3A3488DC1A989D9ED /* PageboyViewController+Management.swift */,
+				839668F4C0D266CC5EDE4FCD220FCBB3 /* PageboyViewController+ScrollCalculations.swift */,
+				D044E7B7E0BF2AF1E0051222BF9EE752 /* PageboyViewController+ScrollDetection.swift */,
+				96BBA19A25DEE8BBF127C6858E1D7AD1 /* PageboyViewController+Transitioning.swift */,
+				104BD2224D41441806B82469700532AD /* PageboyViewController+Updating.swift */,
+				E8F9805BA925C689BE4FBAEEFA655C24 /* PageboyViewControllerDataSource.swift */,
+				AAC7B2FA43A90D1BC85EB9FEAE0C7D47 /* PageboyViewControllerDelegate.swift */,
+				769E8DA3D04888FC32572A70FCD50D94 /* PatchedPageViewController.swift */,
+				21FAFAE4A07520125E82018E3A40E837 /* TransitionOperation.swift */,
+				E802740A4B7DED36446C661C2912B5F3 /* TransitionOperation+Action.swift */,
+				B24B175663DC867900937EC6C113B610 /* UIApplication+SafeShared.swift */,
+				27D8B072958E2CC007775E668EA6C364 /* UIPageViewController+ScrollView.swift */,
+				5658643B29A559F428074C23C7B2B26C /* UIScrollView+Interaction.swift */,
+				674A3DA7ABBDE4BD652E4417E810A9F4 /* UIView+Animation.swift */,
+				0EBAE8A2DD8F2CB2B7B38323AF350D8C /* UIView+AutoLayout.swift */,
+				04956C8FD0073538731B08937DB934F3 /* UIView+Localization.swift */,
+				F9D0492DCCEB546271F242480A6753ED /* UIViewController+Pageboy.swift */,
+				79DA380E933788736121E83C36D81822 /* WeakContainer.swift */,
+				83BFE00335EF6EFAAE52DEF3083E6384 /* Support Files */,
+			);
+			name = Pageboy;
+			path = Pageboy;
+			sourceTree = "<group>";
+		};
+		3D97F188041287F999DB276352B8C190 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				385CF92EC3163791CDC5DA016AEC3730 /* Pageboy */,
+				09264365B32DA4440AADACB62818C71C /* PSXLSReader */,
+				13EC7DE6C082DB67DF2C3F35A99DC82F /* SwiftSoup */,
+				F90FA372A91BD8A867A48174383EB82E /* Tabman */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		54CB2168A170458AB00ADB73A1B11E05 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7FA71FA35996D964673ED29B1FC2B183 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		64AFD30171268D41C0B2F56542AE8FFF /* Pods-someThing */ = {
+			isa = PBXGroup;
+			children = (
+				9A3022C97377794C74966AEA94F19E27 /* Pods-someThing.modulemap */,
+				94E7A932041052D439134B59E9E6105E /* Pods-someThing-acknowledgements.markdown */,
+				04591C84A7713FAFDAC466D90BE433FF /* Pods-someThing-acknowledgements.plist */,
+				EB8EA2D6F14C93ECC486371A025EB122 /* Pods-someThing-dummy.m */,
+				B0A08E6907A5091C7695256647B5C7E9 /* Pods-someThing-frameworks.sh */,
+				9DBC3269926E724B6372AB594D591737 /* Pods-someThing-Info.plist */,
+				F74A46ACCE92648A4B82D89C7C8BE6EE /* Pods-someThing-umbrella.h */,
+				5793AB60959F122DDF0F896C2DF51DE6 /* Pods-someThing.debug.xcconfig */,
+				B964F2F083FF14C359926E9576504CD8 /* Pods-someThing.release.xcconfig */,
+			);
+			name = "Pods-someThing";
+			path = "Target Support Files/Pods-someThing";
+			sourceTree = "<group>";
+		};
+		69221C71C8AE0DF724F242426EDAEC90 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B708C5A6CB54D9FF869DD76F2700AECF /* PSXLSReader.modulemap */,
+				3C3CCA469829ECFBACECDAA6815260AE /* PSXLSReader-dummy.m */,
+				EB735AF7CDC9227706DFE24EC4080B98 /* PSXLSReader-Info.plist */,
+				A47E9B9366434F8C7773009920836A83 /* PSXLSReader-prefix.pch */,
+				F9D8E363BF15E5A8D7D2B2B940CFA701 /* PSXLSReader-umbrella.h */,
+				3D87096EBDD74CBA2439F99733875B37 /* PSXLSReader.debug.xcconfig */,
+				008D0A5CF9F086AB26AA9AAEBF7DD629 /* PSXLSReader.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PSXLSReader";
+			sourceTree = "<group>";
+		};
+		6BBC613FC5A36C25FF3DF8E93340EAC5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94B938CB16C6A94E098AAB2BB864A414 /* Tabman.modulemap */,
+				80C247DBA5A67689D9E63B1086100F18 /* Tabman-dummy.m */,
+				C7F65CA177F3527C98ECFA37C6DB4A98 /* Tabman-Info.plist */,
+				A5BA438FDCA591DCFD0CF7D38A5D78BE /* Tabman-prefix.pch */,
+				1717E41302A01DB5DA19C43B46E1E660 /* Tabman-umbrella.h */,
+				1481CB96089536B78ED273E3B5B5C858 /* Tabman.debug.xcconfig */,
+				0766AED1F63C11752D2352DB87CAFC56 /* Tabman.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Tabman";
+			sourceTree = "<group>";
+		};
+		73F59DE46A7EB5315549AC849438BF2A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E5C3E42B533FBF2F30009B134E3663 /* SwiftSoup.modulemap */,
+				D2CE9FF7654ED624CB5101767D8CAF1A /* SwiftSoup-dummy.m */,
+				1E7A8912E316B496978FFFC08847E076 /* SwiftSoup-Info.plist */,
+				DCEDBC48E4E1EA4909CB02CAC89A1F6A /* SwiftSoup-prefix.pch */,
+				7D2F3E1B62D56BB1D9B26DAD8837FFF6 /* SwiftSoup-umbrella.h */,
+				07A055B2DD38BDC192A433854F198744 /* SwiftSoup.debug.xcconfig */,
+				684848C61F97F7B69B8D732B41310707 /* SwiftSoup.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSoup";
+			sourceTree = "<group>";
+		};
+		83BFE00335EF6EFAAE52DEF3083E6384 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D67A647F373261A91FADBAE460A6851 /* Pageboy.modulemap */,
+				67839DEFC292FC047B0B3177CF8E8BD1 /* Pageboy-dummy.m */,
+				70EFB5067F0B7EE79C9C5F261F3A8926 /* Pageboy-Info.plist */,
+				DC0E367B6416D1C9CF41BB4AD8188425 /* Pageboy-prefix.pch */,
+				7569FB15A6F2B852746108612E96D291 /* Pageboy-umbrella.h */,
+				EF23E2DAFC57786DB689D14AF4F2EF1C /* Pageboy.debug.xcconfig */,
+				C3A7DB031BBDDBB985D5DD886E046F4C /* Pageboy.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pageboy";
+			sourceTree = "<group>";
+		};
+		97BE3DEC47ED0D4F326A8DC635341EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6B21766170CEE010D6BDB3F85334D96 /* Pageboy.framework */,
+				54CB2168A170458AB00ADB73A1B11E05 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6B3E9A3786873D8F4DC36CA4F5E1723 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy.framework */,
+				B0631C4D6CF6F4D1B06053BAE8F61E83 /* Pods_someThing.framework */,
+				D9022D004544B04303DB8C58CABB370A /* PSXLSReader.framework */,
+				5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup.framework */,
+				4D4799138F8AC5FFF2497DCB60AF4CBB /* Tabman.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				97BE3DEC47ED0D4F326A8DC635341EB8 /* Frameworks */,
+				3D97F188041287F999DB276352B8C190 /* Pods */,
+				C6B3E9A3786873D8F4DC36CA4F5E1723 /* Products */,
+				D82EF87532C89E84350DF0009F55AEDA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D82EF87532C89E84350DF0009F55AEDA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				64AFD30171268D41C0B2F56542AE8FFF /* Pods-someThing */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F90FA372A91BD8A867A48174383EB82E /* Tabman */ = {
+			isa = PBXGroup;
+			children = (
+				CBD931075628D2C6DAF505FB2B782DC2 /* AnimateableLabel.swift */,
+				669F0A3D54991A1EDCEC825077DADDB2 /* AutoInsetSpec.swift */,
+				32AA52C0760EFE6A4F0BD4021FB3838B /* AutoInsetter.swift */,
+				9F4A637B7E0B74AD18655F16A24B184D /* BarMath.swift */,
+				76D2743338D215ADD75AFB4ADCEE098E /* CGRect+Interpolation.swift */,
+				06786C859F6D193FE6DBECDA5D67A2D2 /* CollectionViewInsetCalculator.swift */,
+				930EB7F1BD2BCF77142F9D4AB4EA5F8E /* DefaultInsetStore.swift */,
+				D6934B670B143839BCB13F43166552CA /* EdgeFadedView.swift */,
+				46E055DCEDBB39E265DAB49E13E8C21A /* GestureScrollView.swift */,
+				B832CE58C2F42F2FB389B42884E8CF90 /* InsetCalculations.swift */,
+				8C6596F384A5335E80F35C361355E330 /* InsetCalculator.swift */,
+				5DA2A4FAE8DEA35EEB9FDF080B259AF2 /* InsetExecutor.swift */,
+				FC12AE981F3B369C9C2BF13D748C7C66 /* InsetStore.swift */,
+				D814BD3677EE906334878D0952660CEB /* PageboyNavigationDirection+Tabman.swift */,
+				8233B560A887CD6A93BBE1C18A2AA828 /* PageboyViewController+RelativeCurrentPosition.swift */,
+				6CB256F3991BA6B099087D82278D0307 /* ScrollViewInsetCalculator.swift */,
+				1B4098AD9A9F9B166DBEECAEAAF81AA8 /* TableViewInsetCalculator.swift */,
+				25FD4287177BD3FB5DAF65990E978113 /* Tabman.h */,
+				2BABB0B2DD75347C6E471552A8037CD0 /* TabmanViewController.swift */,
+				EB9EE5F4554845EBD5B9B3CDE7BA91A9 /* TabmanViewController+Insets.swift */,
+				9FF63271ACE9F648A6F84F690A65C768 /* TMAnimation.swift */,
+				C750B4ED51FE889FED4BE881A2F716C8 /* TMBadgeView.swift */,
+				1484B20BE3C2684F9089ADB93CCB5DDA /* TMBar.swift */,
+				323E967A2AF0AB204204C968BC7A66D0 /* TMBar+Templates.swift */,
+				EBE28E4DE7AAACCA7DC40518252F5FF2 /* TMBarBackgroundView.swift */,
+				AC7E5110B73CA4C9B71E97B85C5BF09B /* TMBarButton.swift */,
+				1E7BF79EB297C80BCB1D54DB6C99BEBB /* TMBarButton+None.swift */,
+				BD486A1B078095C8513E3ED913DE6177 /* TMBarButtonCollection.swift */,
+				7A6F642951C38F91587642FCE51177F9 /* TMBarButtonController.swift */,
+				0BDF2FE0B66CEF131164A8624EBF2A4D /* TMBarButtonInteractionController.swift */,
+				3FB385F741AAB14B19C046B3216E2DE5 /* TMBarButtonStateController.swift */,
+				021848A14560F9B9D1253320065A0FF7 /* TMBarIndicator.swift */,
+				EA32B400566F4506028236D5D3CA62A7 /* TMBarIndicator+None.swift */,
+				D5BC20060138098B58EA426A82703408 /* TMBarIndicatorContainer.swift */,
+				350601CAF35D2E6DEEE9D6BC3FA24ABC /* TMBarIndicatorLayoutHandler.swift */,
+				AB44E48C039CCFC168F9BAFE2427FA97 /* TMBarItem.swift */,
+				09447DA52F083ECF6CE9572AF7E4A07D /* TMBarLayout.swift */,
+				FE03167212418510A4CD7F6705E5AF13 /* TMBarLayout+None.swift */,
+				CDEA641B66D14452F8E93D6C679594AB /* TMBarLayoutInsetGuides.swift */,
+				738DA3071A1F58B2424091EEE7C886BD /* TMBarLayoutParent.swift */,
+				73F5E0B5AD40E16CCDD33A8A4DEB72D8 /* TMBarView.swift */,
+				3D911088986C8BD6C7397D117B01BF57 /* TMBarViewContentInsetGuides.swift */,
+				BCAF3831BCCD1DC09F511EB44F8CBF8E /* TMBarViewFocusProvider.swift */,
+				5B3C612AE29D72EA5BD5508CC0313813 /* TMBarViewFocusRect.swift */,
+				500C1E8CF3A25411D1EE8774FEC7F542 /* TMBarViewLayoutGrid.swift */,
+				33ECE0C154DFC3DC0CD03C4127C8C8CA /* TMBarViewScrollHandler.swift */,
+				38EF6B504CBD98567404E2D3DF6A7E47 /* TMBarViewUpdateHandler.swift */,
+				EF64ACDD9F6A675050AD18FEF0A53ADA /* TMBlockBarIndicator.swift */,
+				33D6BA5F512EDD28529792DECE783DEB /* TMChevronBarIndicator.swift */,
+				EFA43173E0E92F7AD06AAF0E8D2A647E /* TMConstrainedHorizontalBarLayout.swift */,
+				7E5C042D31B64D72D554080988A80193 /* TMDotBarIndicator.swift */,
+				6ECBA2F5FAE47FB73FBB4CEE14457486 /* TMHidingBar.swift */,
+				F0595D540CBC1D00B038D39E672FB1FC /* TMHidingBar+Triggers.swift */,
+				364EB152A65E4C30362C19A4857732E3 /* TMHorizontalBarLayout.swift */,
+				2C9652BA9CD6A439CA152203A6E33610 /* TMHorizontalBarLayout+Separator.swift */,
+				0186A7044DD3687AD6E2A7B5A17EBC68 /* TMLabelBarButton.swift */,
+				757C8D783A08C7EE154CCF6403077C3D /* TMLineBarIndicator.swift */,
+				052EDC958ED7FF9C380F4E588AC4A93F /* TMSystemBar.swift */,
+				DBB223AFAA41B75E6ECD0C9508D8F268 /* TMTabItemBarButton.swift */,
+				7EBEDC0A87C9728ADD415D38028F2D01 /* TMTransition.swift */,
+				E617EEFB8318A5B26C86436B00E74FF7 /* UIColor+Interpolation.swift */,
+				92C6F026BA39466221F150BCA3DBEBA5 /* UIKit+TMBarItemable.swift */,
+				CFD9C60F29611C74275BB8EE8D100E7D /* UIView+DefaultTintColor.swift */,
+				30D5DF1C81E7FF20F14C9DFA560EDA8F /* UIView+LayoutGuide.swift */,
+				CBE6AB6BB729175A865FCD31C5B260A1 /* UIViewController+ScrollViewDetection.swift */,
+				E9FEAAF294E0CF94F79CC778461A0C36 /* UIViewController+Tabman.swift */,
+				B675C3E4E91239B6D57EE2346AF3CB3E /* ViewTitleViewContainer.swift */,
+				9FA4935BB5604F9E0858893D47FC8B81 /* WeakContainer.swift */,
+				6BBC613FC5A36C25FF3DF8E93340EAC5 /* Support Files */,
+			);
+			name = Tabman;
+			path = Tabman;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D7058D223337B84BB91D871070B9E6A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A6007514730AC01270D0CC5A6982D2 /* brdb.c.h in Headers */,
+				09A44FF8E27ACF3A47E73E58CD571041 /* brdb.h in Headers */,
+				0292819F61F79BF8A4FD507D6B71ECAE /* config.h in Headers */,
+				D4188ACE81415BD8FC76E82E0CA57965 /* endian.h in Headers */,
+				22C604FD4C0B6A14C6A2B9ECD20EF447 /* ole.h in Headers */,
+				B4B5868A54517F0D4DCD087EE36DE2F3 /* PSXLSCell.h in Headers */,
+				337001A18E445C51C1BF5CFD97D9F338 /* PSXLSReader-umbrella.h in Headers */,
+				FD4DA6555D11F234E84DBE2B49C95F61 /* PSXLSReader.h in Headers */,
+				ABEF25AF0F271FC9C3AB7008E4616E24 /* xls.h in Headers */,
+				6BBEC11944932CCB27BB2676D4CC9B03 /* xlsstruct.h in Headers */,
+				7CAB59F7E035045E752D4776F98F9EB7 /* xlstool.h in Headers */,
+				50312F40AF7781A0E8733C69AE8178F0 /* xlstypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FEB4DD94AF2FD6889120D043A08013D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE7FEBB452CF8F205E5B06DB3DF4E57 /* Pageboy-umbrella.h in Headers */,
+				B784F8F3F1C513501DB1B54D77C8A7C9 /* Pageboy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB4C428105AE2B5F04B887EA6FB77BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4C6190E5A08291473F5C0E88FC3739 /* SwiftSoup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E6A846C252EFFDF8D699161934DA6F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820455B9E044B1818C2545CAD8487485 /* Pods-someThing-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B21A64EBC958033318BB01FEBAA3FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76F1D512831AA42F26949C2311D4BB8 /* Tabman-umbrella.h in Headers */,
+				34682401B50A12DF08A9D1023ED56E9A /* Tabman.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06201A837B408E21A6F416D49AF9A573 /* Pageboy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10C3A19CEA759F7EA6937FEF51A11F35 /* Build configuration list for PBXNativeTarget "Pageboy" */;
+			buildPhases = (
+				6FEB4DD94AF2FD6889120D043A08013D /* Headers */,
+				7E9FE395937083C1501F2614805F9E9B /* Sources */,
+				87690769959390633F2521CEA908DCD2 /* Frameworks */,
+				349BE9A68D0DB5BCE06E384040259647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pageboy;
+			productName = Pageboy;
+			productReference = 23D5CD291D18F2187712FE6F84B6F1C6 /* Pageboy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		16C40C02B4370BEB6ACB8C967A608240 /* PSXLSReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B52D851441EDC667ECF458A9ECB29AFC /* Build configuration list for PBXNativeTarget "PSXLSReader" */;
+			buildPhases = (
+				3D7058D223337B84BB91D871070B9E6A /* Headers */,
+				9F8CBDB3CA9589A839881FD1FA274060 /* Sources */,
+				5527975A68607B66FC846B498E1D8D77 /* Frameworks */,
+				6D735F01A8F2ED3762F7512AAED63810 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PSXLSReader;
+			productName = PSXLSReader;
+			productReference = D9022D004544B04303DB8C58CABB370A /* PSXLSReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3EF26018CD886BA3143044A409D6D0B9 /* Tabman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE9140FC82B78B76C3EEE95FEA04CD0C /* Build configuration list for PBXNativeTarget "Tabman" */;
+			buildPhases = (
+				F7B21A64EBC958033318BB01FEBAA3FC /* Headers */,
+				94F8BA47179E7A95D1903F5EAA733243 /* Sources */,
+				484A041D51BF2BBFDFBB4494C8CD928F /* Frameworks */,
+				5556E08F233051B4EA90BB0A0CD98DA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B9C8A364047A24B234B345E8DA73EA2 /* PBXTargetDependency */,
+			);
+			name = Tabman;
+			productName = Tabman;
+			productReference = 4D4799138F8AC5FFF2497DCB60AF4CBB /* Tabman.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C456FA1403D1950B2D083EE620E7033D /* Pods-someThing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07663E7781CCFE30EC954E28C96F3A3A /* Build configuration list for PBXNativeTarget "Pods-someThing" */;
+			buildPhases = (
+				E8E6A846C252EFFDF8D699161934DA6F /* Headers */,
+				34F59E7C489D09A2844FD5309D51176B /* Sources */,
+				E680DC255BFB5509B49C5687F7A7A494 /* Frameworks */,
+				882EE5DC02E5E121F7D2F91670D8F53A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08EAD1A8ED01E0EA4A5CB85BADB76A7D /* PBXTargetDependency */,
+				DD79B01AC67ABA0A7AC621A8BF192917 /* PBXTargetDependency */,
+				BAD5D5F0004D2523D794DD5FF065D5AE /* PBXTargetDependency */,
+				0EEF485A545320E3280F5C31F5219479 /* PBXTargetDependency */,
+			);
+			name = "Pods-someThing";
+			productName = "Pods-someThing";
+			productReference = B0631C4D6CF6F4D1B06053BAE8F61E83 /* Pods_someThing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C662AE5354AFF1184BB5205EAFAD64 /* Build configuration list for PBXNativeTarget "SwiftSoup" */;
+			buildPhases = (
+				BEB4C428105AE2B5F04B887EA6FB77BA /* Headers */,
+				7FBD06BAE2520676FD8AB1D8B98BB7B5 /* Sources */,
+				DA3C25FF8D0CE6F53DE344F076CD143B /* Frameworks */,
+				EC434C17106FD2518CB3618747654313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSoup;
+			productName = SwiftSoup;
+			productReference = 5F38EF8DCE7D46A354D1D1BBAC952903 /* SwiftSoup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C6B3E9A3786873D8F4DC36CA4F5E1723 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06201A837B408E21A6F416D49AF9A573 /* Pageboy */,
+				C456FA1403D1950B2D083EE620E7033D /* Pods-someThing */,
+				16C40C02B4370BEB6ACB8C967A608240 /* PSXLSReader */,
+				D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */,
+				3EF26018CD886BA3143044A409D6D0B9 /* Tabman */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		349BE9A68D0DB5BCE06E384040259647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5556E08F233051B4EA90BB0A0CD98DA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D735F01A8F2ED3762F7512AAED63810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		882EE5DC02E5E121F7D2F91670D8F53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC434C17106FD2518CB3618747654313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34F59E7C489D09A2844FD5309D51176B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2AFA81F70119E8AD515D3D21D3E647 /* Pods-someThing-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E9FE395937083C1501F2614805F9E9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D411C8FB492145516B626FE9C418D7A6 /* DispatchQueue+main.swift in Sources */,
+				68AB6C448B94A4E647B414C15EE472F8 /* IndexedObjectMap.swift in Sources */,
+				20B623DC201914EA6AEE97C5C3B6A8A6 /* NavigationDirection.swift in Sources */,
+				4A8C5CF842CEF17F7257B3CE43705D2A /* Page.swift in Sources */,
+				2CA7FFB42DC6D86894AED253C6D544D5 /* Pageboy-dummy.m in Sources */,
+				1F6683F4CF6ABF7DEB3B62D8C047B0E3 /* PageboyAutoScroller.swift in Sources */,
+				220EECFCE82CFCBABC600A61C7FB26A5 /* PageboyViewController+AutoScrolling.swift in Sources */,
+				6E444C513D6D295FBDE5FC6D51BDAF41 /* PageboyViewController+Management.swift in Sources */,
+				D6DB4DCAB59BB518511A2BBF25ED8D6D /* PageboyViewController+ScrollCalculations.swift in Sources */,
+				7E0FAB1F2E9A1454E777667D37A7CCCB /* PageboyViewController+ScrollDetection.swift in Sources */,
+				1EFE2F52CF3ECCA7D6CF0648DB242360 /* PageboyViewController+Transitioning.swift in Sources */,
+				50EB55F5A7965D80AD111D6F32104BF0 /* PageboyViewController+Updating.swift in Sources */,
+				C5691FD99A172BC01FAF5D50E096AC69 /* PageboyViewController.swift in Sources */,
+				A549DB42C17F884FF66B9C807662D45D /* PageboyViewControllerDataSource.swift in Sources */,
+				F33E790D4B35C33CCC10ABC524793A9C /* PageboyViewControllerDelegate.swift in Sources */,
+				E839731DB53EF420799747168C112929 /* PatchedPageViewController.swift in Sources */,
+				558F696C4F749608A1810F1C49411F88 /* TransitionOperation+Action.swift in Sources */,
+				9FDC5F3249E8016079C7F0F1C6ED8976 /* TransitionOperation.swift in Sources */,
+				B2CA6517FE1B88A7BC55BDEBE63ACB49 /* UIApplication+SafeShared.swift in Sources */,
+				0D6C1152F0C115165C4CE948449AFDCF /* UIPageViewController+ScrollView.swift in Sources */,
+				7C9204DB1B4F0CC1064F5B1340DA1630 /* UIScrollView+Interaction.swift in Sources */,
+				BCA000893004755A7512CAF6AD093F42 /* UIView+Animation.swift in Sources */,
+				98E04EB526B4EE76A07E9DEAAA41BAC9 /* UIView+AutoLayout.swift in Sources */,
+				584A34F02852691A485BBFB127A41935 /* UIView+Localization.swift in Sources */,
+				5F19AEBBD0207B137C4991D2E2CA8410 /* UIViewController+Pageboy.swift in Sources */,
+				307EBC52C431C3835D2426FD73A399B3 /* WeakContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FBD06BAE2520676FD8AB1D8B98BB7B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2A978E7989DDA6E875D8D1CA4E07C6C /* ArrayExt.swift in Sources */,
+				BE91DB541D021D533ECA76B657EEAB2E /* Attribute.swift in Sources */,
+				6D629BD80BB0CCA6AF58CC92849B2990 /* Attributes.swift in Sources */,
+				3F5F94EA364740B22769883FFF692875 /* BinarySearch.swift in Sources */,
+				281547B37099BE2A66110B7806B1AAE4 /* BooleanAttribute.swift in Sources */,
+				E2D9C53A9E2461BEC3CBF37A3359DA78 /* CharacterExt.swift in Sources */,
+				704FAFF3092C67A38AB4A6D748203B48 /* CharacterReader.swift in Sources */,
+				A48AB6385459E899B9A53B014DBEEB16 /* Cleaner.swift in Sources */,
+				3AAE7A7A93EEEB9B63D8DC1193AFB372 /* Collector.swift in Sources */,
+				831BB1C557F1CA786DEE64054B728B2B /* CombiningEvaluator.swift in Sources */,
+				96D344238F4CFFB1E889F0FE6B40182E /* Comment.swift in Sources */,
+				166D66325936467FF24AF15B0379DA6A /* Connection.swift in Sources */,
+				FC174A7F8F2B9F67BF000654DCA03F1F /* CssSelector.swift in Sources */,
+				100B96F996889669B9075C922E48AF66 /* DataNode.swift in Sources */,
+				AA2D5B130952FF0F3A0D9A3850D41CC5 /* DataUtil.swift in Sources */,
+				5E2389F5CE309397BE5C6DAF6A66101B /* Document.swift in Sources */,
+				65EA1C187273B2714CF1F2E235AB644F /* DocumentType.swift in Sources */,
+				981279762DCD410C9406AEA591D67900 /* Element.swift in Sources */,
+				6907ABBF65437DA308395549F36B0259 /* Elements.swift in Sources */,
+				00034ADF568A12CEBA9866CA8A341147 /* Entities.swift in Sources */,
+				75071BE34C79E60560E9903E0233932B /* Evaluator.swift in Sources */,
+				A596505400DF0B1FB4A1BB3BD74CF298 /* Exception.swift in Sources */,
+				5B9C98B83FD2286CE78183A2ED995A35 /* FormElement.swift in Sources */,
+				4E2E70394DFF665EDC135BE8DDF2F04D /* HtmlTreeBuilder.swift in Sources */,
+				B46D9559566D22775388DCE3471C0E83 /* HtmlTreeBuilderState.swift in Sources */,
+				7C43C5E1CAD3B455A21D601DE92480DD /* HttpStatusException.swift in Sources */,
+				032A80CB3A39D5ACB5F50C20CAF8C176 /* Node.swift in Sources */,
+				6B6E21AA4896889399064C8DF3ECD0EE /* NodeTraversor.swift in Sources */,
+				A5426CF4CF848CEC8065FD7A7A9EF3D7 /* NodeVisitor.swift in Sources */,
+				329725C3CBEEAE79BA0DFBF25E63EC6D /* OrderedSet.swift in Sources */,
+				294554C3006BDBA504B06C969E241585 /* ParseError.swift in Sources */,
+				8F9AC611ADB8243557D37EAE2A57AD1D /* ParseErrorList.swift in Sources */,
+				0C12056EBB135AEAB4D58CD699441145 /* Parser.swift in Sources */,
+				59CE297BE8C2C1186E0B925AE45C3EC9 /* ParseSettings.swift in Sources */,
+				096935D54B0678BC88B3C6CA1AA2A810 /* Pattern.swift in Sources */,
+				4AB80D2793B9DB40751265416B16154F /* QueryParser.swift in Sources */,
+				7DCE7B9231C9AAD2C12A16AF77803841 /* SerializationException.swift in Sources */,
+				421462D3884284F95C1828707EB62235 /* SimpleDictionary.swift in Sources */,
+				A5E9D9AD302162ABDFB0DBDD902331A7 /* StreamReader.swift in Sources */,
+				84DA5B9A62FFC2661630D77A952906D5 /* String.swift in Sources */,
+				451A1CB6D44F273CB0127154BE71EAD4 /* StringBuilder.swift in Sources */,
+				DDF8768135F877C96D91C8034FFA4EEC /* StringUtil.swift in Sources */,
+				9D54E379A8D4680592443A828FA5F6D9 /* StructuralEvaluator.swift in Sources */,
+				F9727B6B482A92C07A67509D18F89E5B /* SwiftSoup-dummy.m in Sources */,
+				953FF1459A35239EA30FC21967C086B9 /* SwiftSoup.swift in Sources */,
+				003EE881FC60AECABB983EFB919B04FD /* Tag.swift in Sources */,
+				CF39E29E1966D36FDD00384BD2AED61D /* TextNode.swift in Sources */,
+				E89F61495FD9852AD9D7E6947C85EEAE /* Token.swift in Sources */,
+				4D2B795E0762C7ADD95D8F5D8B1B9314 /* Tokeniser.swift in Sources */,
+				35121279E0EBB91D1ED9D2F75E194D37 /* TokeniserState.swift in Sources */,
+				9BCFCF795FC8C466EF4C9ACF222C2188 /* TokenQueue.swift in Sources */,
+				9F19F52D0ABD25E54664030484D021A3 /* TreeBuilder.swift in Sources */,
+				56E34AB448F77812428963C400E4A11E /* UnicodeScalar.swift in Sources */,
+				372CBA3F494F4224822D66320F4F0C94 /* Validate.swift in Sources */,
+				9FB65BDEA7E1249D5FA4B6B1FB9F05D1 /* Whitelist.swift in Sources */,
+				7B51BE8D3C94632E7AF2BC30EB71B5B6 /* XmlDeclaration.swift in Sources */,
+				4176DB6C27683F6136EC80D347B582D1 /* XmlTreeBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F8BA47179E7A95D1903F5EAA733243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47AF290FC7C3FAC16083E7D8AFA492B3 /* AnimateableLabel.swift in Sources */,
+				1B16CFB3A394CE65C50312E117A2AFD9 /* AutoInsetSpec.swift in Sources */,
+				AEE35D240B44835F1CCE995AB6A6A0D5 /* AutoInsetter.swift in Sources */,
+				28478033100C4F27616430630623E96D /* BarMath.swift in Sources */,
+				38AA40B2D031FEA2E288E3797728D680 /* CGRect+Interpolation.swift in Sources */,
+				984F92066E0B9E06DEE2E43EDA5FC22C /* CollectionViewInsetCalculator.swift in Sources */,
+				1D55CFE9C2A8715C15AD83F03A6C9AE6 /* DefaultInsetStore.swift in Sources */,
+				6BE36316F2E4BF575D646D43CAC11516 /* EdgeFadedView.swift in Sources */,
+				6C39A81231FCAD02701FFB6AD734503C /* GestureScrollView.swift in Sources */,
+				CD473DB1012E9B2DEFC9C264D570C9F6 /* InsetCalculations.swift in Sources */,
+				2A27C151DB1C2589475CAC8C5B4EBD0E /* InsetCalculator.swift in Sources */,
+				655163642437CC12215B8BB0826DEC87 /* InsetExecutor.swift in Sources */,
+				1D13B7C1E8D02FEDD4B6A735E4CFB336 /* InsetStore.swift in Sources */,
+				DE2EEAD6CEE66839D0C0D2549B693C66 /* PageboyNavigationDirection+Tabman.swift in Sources */,
+				B4353C412F9956D11783D54D0E0EA6F4 /* PageboyViewController+RelativeCurrentPosition.swift in Sources */,
+				7688D17BEAFFABE442BE9F5AD99EDF1D /* ScrollViewInsetCalculator.swift in Sources */,
+				7E87418B9EEF097637EF6239D349DFBC /* TableViewInsetCalculator.swift in Sources */,
+				6711E12103DDCCC716E3C41D591F1A4F /* Tabman-dummy.m in Sources */,
+				FFD83E1683DC21B6B5CE9043F7AC0168 /* TabmanViewController+Insets.swift in Sources */,
+				9A369DE689D5862CCA2A87F86FC7542C /* TabmanViewController.swift in Sources */,
+				71C3B63C71A463AB59397449CDC9CEEF /* TMAnimation.swift in Sources */,
+				DB488FCDC37437E981C8B7A7668E24BF /* TMBadgeView.swift in Sources */,
+				F65B381A79365B2C8426F9F37B355DEC /* TMBar+Templates.swift in Sources */,
+				AC8465ADB2A205010C5D0BB6E57BE3D4 /* TMBar.swift in Sources */,
+				F77797744F1A65F4B9B396DA6BBD2AAD /* TMBarBackgroundView.swift in Sources */,
+				7542E59A39A5762C1CDFA1213B5834F5 /* TMBarButton+None.swift in Sources */,
+				A08B67A38D8B22249ABA056DC46E7D0C /* TMBarButton.swift in Sources */,
+				29F2341B918A6A82CFF8CFCF87DC38D5 /* TMBarButtonCollection.swift in Sources */,
+				BC429FEA8FC6DA9502CE677AE9C81409 /* TMBarButtonController.swift in Sources */,
+				248725CC15903DDCD454652854C021D6 /* TMBarButtonInteractionController.swift in Sources */,
+				045C1483C5F51BC43EC690722B6F243C /* TMBarButtonStateController.swift in Sources */,
+				921958562CEEACDBFC375352EF50B64E /* TMBarIndicator+None.swift in Sources */,
+				658D5D39B1275BFD243F1A51793BF9EA /* TMBarIndicator.swift in Sources */,
+				F506B3F0EEBA77401FD4A11CD16B7CD3 /* TMBarIndicatorContainer.swift in Sources */,
+				23E0295550B40B1BD181A67F59F7A296 /* TMBarIndicatorLayoutHandler.swift in Sources */,
+				512D752C2ADF998C5050837276351FEC /* TMBarItem.swift in Sources */,
+				A8DB159A1FC619E45F28DC4456A26901 /* TMBarLayout+None.swift in Sources */,
+				FE9FCE96CDA61262D4EB611F1CF3026E /* TMBarLayout.swift in Sources */,
+				51A72C250FAE47AA9E37FE39421303A4 /* TMBarLayoutInsetGuides.swift in Sources */,
+				19336BED90BF78C34E0DECD4F7982BB9 /* TMBarLayoutParent.swift in Sources */,
+				6F24234F92676EB462EA2FC4F602929C /* TMBarView.swift in Sources */,
+				078BD919F8971F992187394E9E3EF764 /* TMBarViewContentInsetGuides.swift in Sources */,
+				D3DAC2436C897F8659D3E3B5455EB8B0 /* TMBarViewFocusProvider.swift in Sources */,
+				C91B8A1442DCF6482267BCF1F3DE663C /* TMBarViewFocusRect.swift in Sources */,
+				DD65DACB4DF86890214D0E670EA4189D /* TMBarViewLayoutGrid.swift in Sources */,
+				68FFFD557B90AD2CFE2F60662F692EDB /* TMBarViewScrollHandler.swift in Sources */,
+				05763F6ABE20F4E7C7DCA79D6D262FD5 /* TMBarViewUpdateHandler.swift in Sources */,
+				0BD76A5D76285441F9393DF51D5067CF /* TMBlockBarIndicator.swift in Sources */,
+				A326BA93486435884A6BD43C0CEC4B5E /* TMChevronBarIndicator.swift in Sources */,
+				FAD6E5AC46C883FAC5F2AB551F30B573 /* TMConstrainedHorizontalBarLayout.swift in Sources */,
+				E91C3CAF43065B6651B3EDA421B87875 /* TMDotBarIndicator.swift in Sources */,
+				858E32BC5D314A07110E8203FA4C7649 /* TMHidingBar+Triggers.swift in Sources */,
+				E6ECE43E2B640E99DD2F9736A2CF6D8C /* TMHidingBar.swift in Sources */,
+				EEC67F227663409E434B72C6325B38C0 /* TMHorizontalBarLayout+Separator.swift in Sources */,
+				A3524BDD0F6178A9E9B97AD57F298BB1 /* TMHorizontalBarLayout.swift in Sources */,
+				DCDD50E4618C2CE4C84FFF0344981FC1 /* TMLabelBarButton.swift in Sources */,
+				AC9EAAC6E0F132018DE2263E556A4775 /* TMLineBarIndicator.swift in Sources */,
+				73DEE33BACACBC2EC9B4A05F6A5FB0C3 /* TMSystemBar.swift in Sources */,
+				930A82DA7DC2A5BCDAAF1903FADD168A /* TMTabItemBarButton.swift in Sources */,
+				62D62A193944445E8474EBD86900DBD3 /* TMTransition.swift in Sources */,
+				DF2E5F38DD67CBDAA8AFD0DA6186E5BD /* UIColor+Interpolation.swift in Sources */,
+				707600A55F74C1C7E5904A482932D543 /* UIKit+TMBarItemable.swift in Sources */,
+				4820E8318D16EED6D2829F986F5FE498 /* UIView+DefaultTintColor.swift in Sources */,
+				190E98BEA61C00D19A4BAE3A549A3A17 /* UIView+LayoutGuide.swift in Sources */,
+				60EB6AF27D2E12A609B74A8B09D82884 /* UIViewController+ScrollViewDetection.swift in Sources */,
+				D2921E034DCE50661D92A2E5EC115D60 /* UIViewController+Tabman.swift in Sources */,
+				5C6BE16BF2F4634DB9C0F237990C61F3 /* ViewTitleViewContainer.swift in Sources */,
+				BA708AB476BA2236FD85D120651401FF /* WeakContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F8CBDB3CA9589A839881FD1FA274060 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140D25501B9E81CE248E7ED1405E3440 /* endian.c in Sources */,
+				2EDF2B433A6AA6C1C95B0B8FC4AB4236 /* getopt.c in Sources */,
+				2F95D329A8F05CD1AD03DE25EE736995 /* ole.c in Sources */,
+				98D3E09271A53B6305B92A3448BC63B1 /* PSXLSCell.m in Sources */,
+				39B659172F21C5B121A10734F04BCFC1 /* PSXLSReader-dummy.m in Sources */,
+				1D6A97B7CA2A2D11034A09F5C30AC07E /* PSXLSReader.m in Sources */,
+				F03EAA74777DC38EE6C621742D5F330F /* xls.c in Sources */,
+				26D4FBD8FF38109C5A21F7D735A7C1CE /* xls2csv.c in Sources */,
+				DE69571A9A06E1D74886ECBB49AB54F9 /* xlstool.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08EAD1A8ED01E0EA4A5CB85BADB76A7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PSXLSReader;
+			target = 16C40C02B4370BEB6ACB8C967A608240 /* PSXLSReader */;
+			targetProxy = ECD17452C9D37917412B5458D0E46226 /* PBXContainerItemProxy */;
+		};
+		0EEF485A545320E3280F5C31F5219479 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Tabman;
+			target = 3EF26018CD886BA3143044A409D6D0B9 /* Tabman */;
+			targetProxy = E0E6151732D6B40D100E73CE81184B1A /* PBXContainerItemProxy */;
+		};
+		4B9C8A364047A24B234B345E8DA73EA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pageboy;
+			target = 06201A837B408E21A6F416D49AF9A573 /* Pageboy */;
+			targetProxy = F2BAC6441EBEB5E831FE7B5FF976D28F /* PBXContainerItemProxy */;
+		};
+		BAD5D5F0004D2523D794DD5FF065D5AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSoup;
+			target = D89F48405DFAFEF441B4E758A15117A5 /* SwiftSoup */;
+			targetProxy = C3029492AD8B32538F869AD2760B3D7A /* PBXContainerItemProxy */;
+		};
+		DD79B01AC67ABA0A7AC621A8BF192917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pageboy;
+			target = 06201A837B408E21A6F416D49AF9A573 /* Pageboy */;
+			targetProxy = D52EDD0AF414735DF134DDF9BDF2C4B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		074F75C24215586AF31B60C73F343F60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A055B2DD38BDC192A433854F198744 /* SwiftSoup.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		38D6C4766FFEA46EA5F2F879BA8C9746 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5793AB60959F122DDF0F896C2DF51DE6 /* Pods-someThing.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-someThing/Pods-someThing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-someThing/Pods-someThing.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FC74D67803B50FFFA8714222404C078 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1481CB96089536B78ED273E3B5B5C858 /* Tabman.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tabman/Tabman-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tabman/Tabman-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tabman/Tabman.modulemap";
+				PRODUCT_MODULE_NAME = Tabman;
+				PRODUCT_NAME = Tabman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43A51764D12231811533F34491604D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684848C61F97F7B69B8D732B41310707 /* SwiftSoup.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSoup/SwiftSoup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSoup/SwiftSoup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSoup/SwiftSoup.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSoup;
+				PRODUCT_NAME = SwiftSoup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43AE4CD5AED6441B6CEE1EE5E2282AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B964F2F083FF14C359926E9576504CD8 /* Pods-someThing.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-someThing/Pods-someThing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-someThing/Pods-someThing.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		689183DC3482B308672276C1565927AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008D0A5CF9F086AB26AA9AAEBF7DD629 /* PSXLSReader.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PSXLSReader/PSXLSReader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PSXLSReader/PSXLSReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PSXLSReader/PSXLSReader.modulemap";
+				PRODUCT_MODULE_NAME = PSXLSReader;
+				PRODUCT_NAME = PSXLSReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0CBC9A88829C327AE7CC4F5D4C07296 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D87096EBDD74CBA2439F99733875B37 /* PSXLSReader.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PSXLSReader/PSXLSReader-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PSXLSReader/PSXLSReader-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PSXLSReader/PSXLSReader.modulemap";
+				PRODUCT_MODULE_NAME = PSXLSReader;
+				PRODUCT_NAME = PSXLSReader;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B727E3CF5131CCB26301C757ABA37C15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3A7DB031BBDDBB985D5DD886E046F4C /* Pageboy.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
+				PRODUCT_MODULE_NAME = Pageboy;
+				PRODUCT_NAME = Pageboy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B89D42C8C4E6A6346FEBD2397A545783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF23E2DAFC57786DB689D14AF4F2EF1C /* Pageboy.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pageboy/Pageboy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pageboy/Pageboy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Pageboy/Pageboy.modulemap";
+				PRODUCT_MODULE_NAME = Pageboy;
+				PRODUCT_NAME = Pageboy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F15B3ADEB8B1F56B9587D7458F0452B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0766AED1F63C11752D2352DB87CAFC56 /* Tabman.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Tabman/Tabman-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Tabman/Tabman-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Tabman/Tabman.modulemap";
+				PRODUCT_MODULE_NAME = Tabman;
+				PRODUCT_NAME = Tabman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5F04600F5626DC980F02790D1ED2C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07663E7781CCFE30EC954E28C96F3A3A /* Build configuration list for PBXNativeTarget "Pods-someThing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38D6C4766FFEA46EA5F2F879BA8C9746 /* Debug */,
+				43AE4CD5AED6441B6CEE1EE5E2282AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10C3A19CEA759F7EA6937FEF51A11F35 /* Build configuration list for PBXNativeTarget "Pageboy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B89D42C8C4E6A6346FEBD2397A545783 /* Debug */,
+				B727E3CF5131CCB26301C757ABA37C15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD9D19FEEBF98DE271D7FBABCB845B5 /* Debug */,
+				F5F04600F5626DC980F02790D1ED2C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C662AE5354AFF1184BB5205EAFAD64 /* Build configuration list for PBXNativeTarget "SwiftSoup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074F75C24215586AF31B60C73F343F60 /* Debug */,
+				43A51764D12231811533F34491604D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B52D851441EDC667ECF458A9ECB29AFC /* Build configuration list for PBXNativeTarget "PSXLSReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0CBC9A88829C327AE7CC4F5D4C07296 /* Debug */,
+				689183DC3482B308672276C1565927AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE9140FC82B78B76C3EEE95FEA04CD0C /* Build configuration list for PBXNativeTarget "Tabman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FC74D67803B50FFFA8714222404C078 /* Debug */,
+				F15B3ADEB8B1F56B9587D7458F0452B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
